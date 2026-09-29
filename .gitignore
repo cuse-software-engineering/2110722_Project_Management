@@ -1,2 +1,5 @@
 *.png
 .DS_Store
+__pycache__/
+# Working builds of the project report (PDF/HTML output of project/tools/build_pm_report.py)
+project/build/

@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><style>
+@font-face { font-family: 'TH Sarabun PSK'; src: url('file:///workspaces/2110628_Requirement/resources/fonts/20180808-TH-Sarabun-PSK/THSarabun.ttf') format('truetype'); font-weight: 400; }
+@font-face { font-family: 'TH Sarabun PSK'; src: url('file:///workspaces/2110628_Requirement/resources/fonts/20180808-TH-Sarabun-PSK/THSarabun%20Bold.ttf') format('truetype'); font-weight: 700; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #fff; font-family: 'TH Sarabun PSK', 'Garuda', sans-serif; color: #000; }
+section.card { position: relative; width: 1400px; height: 745px; background: #fff; overflow: hidden; }
+svg.wires { position: absolute; left: 0; top: 0; width: 1400px; height: 745px; pointer-events: none; }
+.title { position: absolute; left: 24px; top: 14px; }
+.title h1 { font-size: 36px; font-weight: 700; }
+.title p { font-size: 24px; color: #222; }
+.rowlabel { position: absolute; left: 24px; width: 130px; font-size: 24px; font-weight: 700; color: #111; line-height: 1.1; }
+.tick { position: absolute; font-size: 19px; color: #444; text-align: center; width: 60px; margin-left: -30px; }
+.year { position: absolute; height: 30px; border-radius: 6px; font-size: 22px; font-weight: 700; display: flex; align-items: center; justify-content: center; }
+.ph { position: absolute; height: 54px; border-radius: 8px; border: 2px solid #0b2a4a; background: #dbe6f3; display: flex; align-items: center; justify-content: center; text-align: center; font-size: 21px; font-weight: 700; line-height: 1.05; padding: 0 4px; }
+.ph.pilot { background: #fff4d6; border-color: #b7791f; }
+.it { position: absolute; height: 40px; border-radius: 6px; border: 2px solid #1d4ed8; background: #e8f0fe; display: flex; align-items: center; justify-content: center; font-size: 21px; font-weight: 700; }
+.it.pilot { border-color: #b7791f; background: #fff9e8; font-weight: 400; font-size: 19px; }
+.ms { position: absolute; width: 22px; height: 22px; background: #8b1a1a; transform: rotate(45deg); margin-left: -11px; }
+.ms.gate { background: #15803d; width: 26px; height: 26px; margin-left: -13px; }
+.mslabel { position: absolute; font-size: 18px; color: #8b1a1a; text-align: center; width: 110px; margin-left: -55px; line-height: 1.05; }
+.mslabel.gate { color: #15803d; font-weight: 700; }
+.pg { position: absolute; height: 30px; border-radius: 5px; display: flex; align-items: center; padding-left: 8px; font-size: 19px; color: #111; white-space: nowrap; }
+.pg.solid { background: #c9d8ea; border: 1.5px solid #0b2a4a; }
+.pg.light { background: repeating-linear-gradient(135deg, #eef2f7 0 6px, #f9fafb 6px 12px); border: 1.5px dashed #64748b; }
+.pg.green { background: #e6f4ea; border: 1.5px solid #15803d; }
+.pg.amber { background: #fff4d6; border: 1.5px solid #b7791f; }
+.pg.red { background: #fde8e8; border: 1.5px solid #8b1a1a; }
+.art { position: absolute; border: 1.5px solid #64748b; border-radius: 8px; background: #fcfcfd; padding: 6px 10px; font-size: 18.5px; line-height: 1.18; color: #111; }
+.art b { display: block; font-size: 19px; color: #0b2a4a; margin-bottom: 2px; }
+.legend { position: absolute; left: 24px; top: 676px; width: 1350px; font-size: 18px; color: #333; }
+</style></head><body><section class="card">
+<div class="title"><h1>Development process of the CTRS project</h1><p>Tailored RUP phases and iterations over the two project years · milestones and the expansion gate · PMBOK process groups</p></div>
+
+<!-- timeline: x = 160 + month * 50, month 0 = August 2026 -->
+<div class="year" style="left:160px;top:96px;width:596px;background:#e8f0fe;color:#0b2a4a">Year 0 · build for the pilot restaurant (Aug 2026 – Jul 2027)</div>
+<div class="year" style="left:762px;top:96px;width:594px;background:#fff4d6;color:#7c4a03">Year 1 · pilot year and productization (Aug 2027 – Jul 2028)</div>
+<div class="tick" style="left:160px;top:132px">Aug<br>2026</div><div class="tick" style="left:310px;top:132px">Nov</div><div class="tick" style="left:460px;top:132px">Feb<br>2027</div><div class="tick" style="left:610px;top:132px">May</div><div class="tick" style="left:760px;top:132px">Aug<br>2027</div><div class="tick" style="left:910px;top:132px">Nov</div><div class="tick" style="left:1060px;top:132px">Feb<br>2028</div><div class="tick" style="left:1210px;top:132px">May</div><div class="tick" style="left:1355px;top:132px">Jul<br>2028</div>
+
+<div class="rowlabel" style="top:192px">Phases</div>
+<div class="ph" style="left:163px;top:180px;width:49px">Incep-<br>tion</div>
+<div class="ph" style="left:213px;top:180px;width:84px">Elabo-<br>ration</div>
+<div class="ph" style="left:302px;top:180px;width:201px">Construction<br>Release 1.0</div>
+<div class="ph" style="left:510px;top:180px;width:53px;font-size:19px">Tran-<br>sition</div>
+<div class="ph" style="left:567px;top:180px;width:133px">Construction<br>Release 2.0</div>
+<div class="ph" style="left:705px;top:180px;width:53px;font-size:19px">Tran-<br>sition</div>
+<div class="ph" style="left:762px;top:180px;width:270px">Construction<br>Release 2.1 (productization)</div>
+<div class="ph" style="left:1037px;top:180px;width:41px;font-size:18px">Tran-<br>sition</div>
+<div class="ph pilot" style="left:1083px;top:180px;width:272px">Pilot operation continues,<br>pilot review, close-out</div>
+
+<div class="rowlabel" style="top:258px">Iterations</div>
+<div class="it" style="left:163px;top:250px;width:24px">I1</div><div class="it" style="left:189px;top:250px;width:23px">I2</div>
+<div class="it" style="left:213px;top:250px;width:41px">E1</div><div class="it" style="left:256px;top:250px;width:41px">E2</div>
+<div class="it" style="left:302px;top:250px;width:88px">C1</div><div class="it" style="left:415px;top:250px;width:88px">C2</div>
+<div class="it" style="left:510px;top:250px;width:53px">T1</div>
+<div class="it" style="left:567px;top:250px;width:133px">C3</div>
+<div class="it" style="left:705px;top:250px;width:53px">T2</div>
+<div class="it" style="left:762px;top:250px;width:270px">C4</div>
+<div class="it" style="left:1037px;top:250px;width:41px">T3</div>
+<div class="it pilot" style="left:762px;top:298px;width:593px">P1 · La Loy operates the system alone; KPIs measured on every concert night</div>
+
+<div class="rowlabel" style="top:356px">Milestones</div>
+<div class="ms" style="left:212px;top:352px"></div><div class="mslabel" style="left:212px;top:382px">LCO<br>2 Sep 2026</div>
+<div class="ms" style="left:297px;top:352px"></div><div class="mslabel" style="left:310px;top:382px">LCA<br>23 Oct 2026</div>
+<div class="ms" style="left:503px;top:352px"></div><div class="mslabel" style="left:503px;top:382px">IOC<br>26 Feb 2027</div>
+<div class="ms" style="left:563px;top:352px"></div><div class="mslabel" style="left:590px;top:382px">Release 1.0<br>2 Apr 2027</div>
+<div class="ms" style="left:758px;top:352px"></div><div class="mslabel" style="left:758px;top:382px">Release 2.0<br>30 Jul 2027</div>
+<div class="ms" style="left:1078px;top:352px"></div><div class="mslabel" style="left:1078px;top:382px">Release 2.1<br>11 Feb 2028</div>
+<div class="ms gate" style="left:1355px;top:350px"></div><div class="mslabel gate" style="left:1330px;top:382px">Expansion gate<br>28 Jul 2028</div>
+
+<div class="rowlabel" style="top:440px;line-height:1.1">PMBOK<br>process<br>groups</div>
+<div class="pg solid" style="left:163px;top:440px;width:49px"></div><div class="pg" style="left:212px;top:440px;width:200px">Initiating (I1)</div>
+<div class="pg solid" style="left:189px;top:478px;width:108px">Planning (I2–E2)</div>
+<div class="pg light" style="left:302px;top:478px;width:776px">Plan for Next Iteration before every iteration · re-planning at each milestone · pilot-year plan</div>
+<div class="pg solid" style="left:302px;top:516px;width:456px">Executing: Release 1.0 and 2.0 for the pilot restaurant</div>
+<div class="pg solid" style="left:762px;top:516px;width:316px">Executing: productization</div>
+<div class="pg amber" style="left:762px;top:554px;width:593px">Executing: pilot operation, support, KPI measurement (P1)</div>
+<div class="pg green" style="left:163px;top:592px;width:1192px">Monitoring and Controlling: weekly status assessment · iteration assessment · milestone review · change control · risk review · pilot KPIs</div>
+<div class="pg red" style="left:1300px;top:630px;width:55px;padding-left:4px">Closing</div>
+<div class="pg light" style="left:212px;top:630px;width:1080px">Phase close-out at each milestone (LCO, LCA, IOC, Release)</div>
+
+
+<div class="legend">Blue = build phases and iterations · amber = pilot operation · red diamonds = phase milestones (LCO, LCA, IOC, Product Release) · green diamond = expansion decision that closes the project · bars = PMBOK process groups over time (hatched = repeated at every iteration or milestone)</div>
+
+<svg class="wires" viewBox="0 0 1400 745">
+<line x1="160" y1="172" x2="160" y2="660" stroke="#9ca3af" stroke-width="1"/>
+<line x1="760" y1="172" x2="760" y2="340" stroke="#9ca3af" stroke-width="1" stroke-dasharray="4 4"/><line x1="760" y1="430" x2="760" y2="660" stroke="#9ca3af" stroke-width="1" stroke-dasharray="4 4"/>
+<line x1="1356" y1="172" x2="1356" y2="660" stroke="#9ca3af" stroke-width="1"/>
+<line x1="390" y1="256" x2="415" y2="256" stroke="#9ca3af" stroke-width="2" stroke-dasharray="3 3"/>
+<text x="402" y="246" font-family="TH Sarabun PSK" font-size="15" fill="#555" text-anchor="middle">new-year break</text>
+</svg>
+</section></body></html>

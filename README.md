@@ -40,3 +40,9 @@ Concepts of project and project management; project management in software and I
 8. Communication management
 9. Procurement management
 10. Stakeholder management
+
+## Project
+
+`project/` holds the CTRS (Concert Table Reservation System) project-management report: assignment brief, previous-year sample, Milestone 1 sources (`project/milestone1/`), the financial model and the build script (`project/tools/`). See [`project/README.md`](project/README.md).
+
+Moved here from the `workspace/project-management/` folder of the 2110628 requirements repository. The build script still imports the report builder from that repository (`assignments/group/tools/`), and the diagram PNGs and `project/build/` outputs are regenerated, not tracked.

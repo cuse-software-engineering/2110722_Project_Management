@@ -1,0 +1,61 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><style>
+@font-face { font-family: 'TH Sarabun PSK'; src: url('file:///workspaces/2110628_Requirement/resources/fonts/20180808-TH-Sarabun-PSK/THSarabun.ttf') format('truetype'); font-weight: 400; }
+@font-face { font-family: 'TH Sarabun PSK'; src: url('file:///workspaces/2110628_Requirement/resources/fonts/20180808-TH-Sarabun-PSK/THSarabun%20Bold.ttf') format('truetype'); font-weight: 700; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #fff; font-family: 'TH Sarabun PSK', 'Garuda', sans-serif; color: #000; }
+section.card { position: relative; width: 1400px; height: 1300px; background: #fff; overflow: hidden; }
+svg.wires { position: absolute; left: 0; top: 0; width: 1400px; height: 1300px; pointer-events: none; }
+.box { position: absolute; border-radius: 10px; border: 2.5px solid #000; background: #fff; color: #000;
+        display: flex; flex-direction: column; justify-content: center; align-items: center;
+        text-align: center; padding: 8px 14px; line-height: 1.15; }
+.box .t { font-weight: 700; font-size: 32px; }
+.box .s { font-size: 26px; color: #111; margin-top: 4px; }
+.box .tag { font-size: 21px; font-weight: 700; letter-spacing: 0.05em; text-transform: uppercase;
+            border-radius: 999px; padding: 1px 12px; margin-bottom: 6px; background: #e6e6e6; color: #000; }
+.box.blue { border-color: #1d4ed8; background: #e8f0fe; }   .box.blue .tag { background: #c7d7fb; }
+.box.green { border-color: #15803d; background: #e6f4ea; }  .box.green .tag { background: #c3e6cd; }
+.box.red { border-color: #8b1a1a; background: #fde8e8; border-width: 3px; } .box.red .tag { background: #f5c2c2; }
+.box.slate { border-color: #475569; border-style: dashed; background: #f4f4f5; } .box.slate .tag { background: #e2e8f0; }
+.region { position: absolute; border: 2px dashed #64748b; border-radius: 16px; background: #fcfcfd; }
+.region .rt { position: absolute; left: 16px; top: 8px; font-size: 24px; font-weight: 700; letter-spacing: 0.06em;
+               text-transform: uppercase; color: #333; }
+.label { position: absolute; font-size: 24px; color: #000; line-height: 1.2; }
+.title { position: absolute; left: 24px; top: 14px; }
+.title h1 { font-size: 38px; font-weight: 700; color: #000; }
+.title p { font-size: 26px; color: #222; }
+</style></head><body><section class="card">
+<div class="title"><h1>Project organization of the CTRS project</h1><p>Software house as sponsor and product owner · La Loy as pilot customer · the four-member project team, several RUP roles each · Change Control Board</p></div>
+
+<div class="region" style="left:40px;top:330px;width:620px;height:760px"><div class="rt">Project team</div></div>
+<div class="region" style="left:740px;top:330px;width:620px;height:760px"><div class="rt">User side (restaurant)</div></div>
+
+<div class="box red" style="left:90px;top:110px;width:520px;height:170px"><div class="tag">Project Sponsor · Product owner</div><div class="t">The software house (four partners)</div><div class="s">funds the build, pilot and productization · owns the product, plans and prices · decides the expansion at the end of the pilot year</div></div>
+<div class="box green" style="left:790px;top:110px;width:520px;height:170px"><div class="tag">Pilot customer</div><div class="t">Restaurant Owner (La Loy)</div><div class="s">signs the pilot implementation agreement · approves business rules and scope · approves the Vision at LCO · signs off the SRS at LCA</div></div>
+
+<div class="box green" style="left:790px;top:385px;width:520px;height:195px"><div class="tag">Customer representative · Domain expert</div><div class="t">Restaurant Manager</div><div class="s">runs the LINE Official Account · provides the business rules and as-is knowledge · sets feature priorities · reviews use cases and prototype · CCB member</div></div>
+<div class="box green" style="left:790px;top:650px;width:520px;height:150px"><div class="tag">On-site end users</div><div class="t">Front Staff</div><div class="s">e-ticket check-in at the door · review the check-in use case and prototype · acceptance testing</div></div>
+<div class="box slate" style="left:790px;top:870px;width:520px;height:170px"><div class="tag">External end users</div><div class="t">Customers</div><div class="s">reserve and pay through the LINE Official Account · represented by the survey and prototype trials · no approval authority</div></div>
+
+<div class="box blue" style="left:90px;top:385px;width:520px;height:195px"><div class="tag">Project Manager · Change Control Manager</div><div class="t">Boonnisa Tangjitpermkwamdee</div><div class="s">plans and controls scope, schedule, budget and risks · iteration and milestone reviews · chairs the CCB</div></div>
+<div class="box blue" style="left:140px;top:620px;width:470px;height:135px"><div class="tag">System Analyst · Software Architect</div><div class="t">Sirapatr Chalermwattanatrai</div><div class="s">Vision, use-case model, architecture, payment gateway feasibility</div></div>
+<div class="box blue" style="left:140px;top:780px;width:470px;height:135px"><div class="tag">Requirements Specifier · UI Designer · Designer</div><div class="t">Chawanakorn Sanannam</div><div class="s">use-case specifications, SRS, prototype, analysis model · Implementer in Construction</div></div>
+<div class="box blue" style="left:140px;top:940px;width:470px;height:135px"><div class="tag">Quality Assurance · Test Designer · Tester</div><div class="t">Watayut Aiamanan</div><div class="s">Requirements Reviewer, Process Engineer, test plan and tests · Implementer in Construction</div></div>
+
+<div class="box slate" style="left:250px;top:1120px;width:900px;height:100px"><div class="tag">Change Control Board (CCB)</div><div class="s">chair: Change Control Manager · members: System Analyst, Restaurant Manager, Quality Assurance · the Owner when scope or budget is affected · decides change requests after impact analysis</div></div>
+
+<div class="label" style="left:615px;top:130px;width:170px;font-size:20px;color:#333;text-align:center">pilot implementation agreement</div>
+<div class="label" style="left:40px;top:1234px;width:1320px;font-size:22px;color:#333">Solid line = reporting line · dashed line between sponsor and pilot customer = pilot implementation agreement · dashed arrow = served through the LINE Official Account · dashed box = board or external party · the reviewer of an artifact is never its author</div>
+
+<svg class="wires" viewBox="0 0 1400 1300">
+<defs><marker id="arr" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="userSpaceOnUse"><path d="M0,0 L10,5 L0,10 z" fill="#000"/></marker></defs>
+<line x1="350" y1="280" x2="350" y2="385" stroke="#000" stroke-width="2.5"/>
+<line x1="1050" y1="280" x2="1050" y2="385" stroke="#000" stroke-width="2.5"/>
+<line x1="610" y1="195" x2="790" y2="195" stroke="#000" stroke-width="2.5" stroke-dasharray="9 8"/>
+<polyline points="110,580 110,1007" fill="none" stroke="#000" stroke-width="2.5"/>
+<line x1="110" y1="687" x2="140" y2="687" stroke="#000" stroke-width="2.5"/>
+<line x1="110" y1="847" x2="140" y2="847" stroke="#000" stroke-width="2.5"/>
+<line x1="110" y1="1007" x2="140" y2="1007" stroke="#000" stroke-width="2.5"/>
+<line x1="1050" y1="580" x2="1050" y2="650" stroke="#000" stroke-width="2.5"/>
+<polyline points="790,500 762,500 762,955 790,955" fill="none" stroke="#000" stroke-width="2.5" stroke-dasharray="9 8" marker-end="url(#arr)"/>
+</svg>
+</section></body></html>

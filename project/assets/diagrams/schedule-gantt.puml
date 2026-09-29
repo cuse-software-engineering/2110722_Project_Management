@@ -1,0 +1,42 @@
+@startgantt
+scale 2
+<style>
+ganttDiagram {
+  FontName Arial
+  FontSize 12
+  task { BackgroundColor #c9d8ea; LineColor #0b2a4a; FontSize 12 }
+  milestone { BackgroundColor #8b1a1a; LineColor #8b1a1a; FontColor #8b1a1a }
+  separator { LineColor #9ca3af }
+  timeline { BackgroundColor #f3f4f6 }
+}
+</style>
+printscale monthly
+Project starts 2026-08-03
+2026-12-21 to 2027-01-01 are closed
+
+-- Inception --
+[I1 Problem, scope, stakeholders, first elicitation] starts 2026-08-03 and ends 2026-08-24
+[I2 Vision revised, Development Case, Business Case, plans] starts 2026-08-25 and ends 2026-09-02
+[LCO: Lifecycle Objectives] happens at 2026-09-02
+-- Elaboration --
+[E1 Use cases UC-01 and UC-02, SRS, Supplementary Specification] starts 2026-09-03 and ends 2026-09-16
+[E2 Analysis model, architecture, UI prototype, test plan, Construction plan] starts 2026-09-17 and ends 2026-10-23
+[LCA: Lifecycle Architecture, SRS baselined] happens at 2026-10-23
+-- Construction (Release 1.0 Core) --
+[C1 Concert set-up, table map, reserve and pay, payment callback] starts 2026-10-26 and ends 2026-12-18
+[C2 E-ticket, check-in, live booking view, exceptions, staff accounts, backup] starts 2027-01-04 and ends 2027-02-26
+[IOC: Initial Operational Capability] happens at 2027-02-26
+-- Transition (Release 1.0) --
+[T1 Pilot on concert nights, training, data migration, go-live] starts 2027-03-01 and ends 2027-04-02
+[Release 1.0 in operation] happens at 2027-04-02
+-- Construction and Transition (Release 2.0 Growth) --
+[C3 Reminders, waitlist, transfer, reports, grace extension] starts 2027-04-05 and ends 2027-06-25
+[T2 Release 2.0 on La Loy's concert nights, training on the new features] starts 2027-06-28 and ends 2027-07-30
+[Release 2.0 in operation] happens at 2027-07-30
+-- Pilot year: La Loy alone, productization (Release 2.1 Product) --
+[P1 Pilot operation and KPI measurement at La Loy] starts 2027-08-02 and ends 2028-07-28
+[C4 Multi-tenant service, plans and limits, billing, self-service onboarding] starts 2027-08-02 and ends 2028-01-14
+[T3 Migration of La Loy, Free-plan sign-up opened, support routine] starts 2028-01-17 and ends 2028-02-11
+[Release 2.1 in operation] happens at 2028-02-11
+[Pilot review, expansion decision, project closed] happens at 2028-07-28
+@endgantt
