@@ -41,8 +41,43 @@ Concepts of project and project management; project management in software and I
 9. Procurement management
 10. Stakeholder management
 
-## Project
+## Student
 
-`project/` holds the CTRS (Concert Table Reservation System) project-management report: assignment brief, previous-year sample, Milestone 1 sources (`project/milestone1/`), the financial model and the build script (`project/tools/`). See [`project/README.md`](project/README.md).
+- **Name:** Watayut Aiamanan
+- **Student ID:** 6970267821
 
-Moved here from the `workspace/project-management/` folder of the 2110628 requirements repository. The build script still imports the report builder from that repository (`assignments/group/tools/`), and the diagram PNGs and `project/build/` outputs are regenerated, not tracked.
+## Project Structure
+
+Same layout as the 2110628 Requirements Engineering repository of the same student.
+
+```
+assignments/
+  individual/<NN>/    Individual assignments (00 = personality, 01 = review questions, chapters 1 and 2, ...)
+  group/              The term project: project-management report of CTRS (Concert Table Reservation System),
+                      the project that 2110628 runs as a tailored RUP requirements project
+    problem/          The project brief (.md + .pdf); read-only
+    workspace/        The report, markdown-first: report/milestoneN/ sources + report/assets/ figures,
+                      working builds in report/build/ (ignored); received/ = material received (sample report)
+    tools/            Build scripts: financial model (finance.py) and report builder (build_pm_report.py)
+    deliverables/     What was handed in: report/ (submitted PDFs per milestone)
+materials/
+  lecture_notes/<chapter>/   Lecture slide PDFs, with extracted md/ transcripts
+tools/
+  pdf_to_png.py              Generic, assignment-agnostic script: render any PDF's pages to PNG
+```
+
+Individual assignments follow a four-way split:
+
+| Folder | Contents |
+|---|---|
+| `problem/` | The task as given: the original assignment brief/PDF, grading criteria. Read-only reference, never edited. |
+| `workspace/` | Everything used to work toward the answer: drafts, notes, source diagrams, extracted material, raw photos. Messy is fine here. |
+| `tools/` | Build scripts specific to that assignment. Scripts useful across *all* assignments live in the top-level `tools/` instead. |
+| `report/` | Only the final deliverable(s) actually submitted, nothing else. |
+
+The group project uses the same split once at `assignments/group/`, with `deliverables/` in place of `report/`
+(see [assignments/group/README.md](assignments/group/README.md)). Its build reuses the report builder, fonts and
+RUP artifacts of the 2110628 repository, which it looks up next to or around this one.
+
+Raw source photos/screenshots and intermediate renders are gitignored; only the figures actually embedded in a report
+are tracked (see `.gitignore`).

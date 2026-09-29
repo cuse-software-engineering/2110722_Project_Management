@@ -1,5 +1,21 @@
+# Generated/raw image files (rendered from PDFs, source photos & screenshots)
 *.png
+*.jpg
+*.jpeg
 .DS_Store
+
+# Except the processed figures actually embedded in a report (diagram renders next to their sources)
+!assignments/group/workspace/report/**/*.png
+!assignments/group/workspace/report/**/*.jpg
+!assignments/group/workspace/report/**/*.jpeg
+# ... the diagram renders embedded in an individual assignment (source .html/.puml next to them)
+!assignments/individual/*/workspace/diagrams/*.png
+# ... and the pictures chosen for assignment 00 (material of the answer, not renders)
+!assignments/individual/00/workspace/**/*.jpg
+!assignments/individual/00/workspace/**/*.jpeg
+
+# Python bytecode from the build scripts
 __pycache__/
-# Working builds of the project report (PDF/HTML output of project/tools/build_pm_report.py)
-project/build/
+
+# Working builds of the project report (what is handed in lives in assignments/group/deliverables/)
+assignments/group/workspace/report/build/

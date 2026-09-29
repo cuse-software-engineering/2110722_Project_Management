@@ -116,7 +116,7 @@ The project objectives (Table 2.1) are the outcomes the project delivers; the st
 
 **Table 2.2 Strategic business objectives and targets**
 
-<!-- source: ../../../assignments/group/project/management/business-case.md · Business Case v1.7 (In review) · Develop Business Case (ac_dbzcs) -->
+<!-- source: ../../../../../../../assignments/group/project/management/business-case.md · Business Case v1.7 (In review) · Develop Business Case (ac_dbzcs) -->
 
 | Objective | Target | Means |
 |---|---|---|
@@ -138,7 +138,7 @@ The restaurant runs its concert-night sales on communication and note-taking too
 
 **Table 2.3 As-is tools**
 
-<!-- source: ../../../assignments/group/project/management/business-case.md · Business Case v1.7 (In review) · Develop Business Case (ac_dbzcs) -->
+<!-- source: ../../../../../../../assignments/group/project/management/business-case.md · Business Case v1.7 (In review) · Develop Business Case (ac_dbzcs) -->
 
 | Tool | Use today |
 |---|---|
@@ -156,7 +156,7 @@ Six problems were identified from observation of the process, review of the rest
 
 **Table 2.4 Problems, ranked**
 
-<!-- source: ../../../assignments/group/project/management/business-case.md · Business Case v1.7 (In review) · Develop Business Case (ac_dbzcs) -->
+<!-- source: ../../../../../../../assignments/group/project/management/business-case.md · Business Case v1.7 (In review) · Develop Business Case (ac_dbzcs) -->
 
 | Rank | ID | Problem | Impact | Freq. | Score | Root cause | Business requirement |
 |---|---|---|---|---|---|---|---|
@@ -170,7 +170,7 @@ Six problems were identified from observation of the process, review of the rest
 
 The root causes RC-01 to RC-07 named in Table 2.4 were reached by asking "why" until a structural cause that the project can act on appeared; RC-03 was merged into RC-01 when the former problem P-03 was merged into P-01.
 
-<!-- source: ../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
+<!-- source: ../../../../../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
 
 - **P-02 double bookings.** Why do two customers get the same table? Because the map the Manager sends is already stale when the second customer picks. Why is it stale? Because the Manager edits an image by hand and keeps pending picks in memory while chatting. Why is there no live record? Because bookings are spread over LINE, Excel and paper with no central database (RC-02).
 - **P-01 manual chat process.** Why do customers wait hours? Because the Manager reads and answers every chat personally, one at a time. Why must the Manager answer? Because there is no self-service channel to see the map or reserve. Why none? Because the whole process was built on LINE chat, which has no application behind it (RC-01).
@@ -184,7 +184,7 @@ Table 2.5 states each root cause as the Vision records it, next to the problem i
 
 **Table 2.5 Root causes**
 
-<!-- source: ../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
+<!-- source: ../../../../../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
 
 | ID | Root cause | Problem |
 | --- | --- | --- |
@@ -200,7 +200,7 @@ Each root cause is answered by one of the five business requirements BR-01 to BR
 
 **Table 2.6 Business requirements**
 
-<!-- source: ../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
+<!-- source: ../../../../../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
 
 | ID | Need | Priority | Concerns / current solution | Proposed solution |
 |---|---|---|---|---|
@@ -215,7 +215,7 @@ Table 2.7 sets the proposed system against the problems from the other side: the
 
 **Table 2.7 Impacts of the proposed system**
 
-<!-- source: ../../../assignments/group/project/management/business-case.md · Business Case v1.7 (In review) · Develop Business Case (ac_dbzcs) -->
+<!-- source: ../../../../../../../assignments/group/project/management/business-case.md · Business Case v1.7 (In review) · Develop Business Case (ac_dbzcs) -->
 
 | Context | Positive impact | Negative impact |
 |---|---|---|
@@ -293,7 +293,7 @@ Four options were considered (Table 2.10) and compared on fit to the root causes
 
 **Table 2.10 Options considered**
 
-<!-- source: ../../../assignments/group/project/management/business-case.md · Business Case v1.7 (In review) · Develop Business Case (ac_dbzcs) -->
+<!-- source: ../../../../../../../assignments/group/project/management/business-case.md · Business Case v1.7 (In review) · Develop Business Case (ac_dbzcs) -->
 
 | ID | Alternative | Description |
 |---|---|---|
@@ -305,7 +305,7 @@ Four options were considered (Table 2.10) and compared on fit to the root causes
 
 **Table 2.11 Comparison of the options**
 
-<!-- source: ../../../assignments/group/project/management/business-case.md · Business Case v1.7 (In review) · Develop Business Case (ac_dbzcs) -->
+<!-- source: ../../../../../../../assignments/group/project/management/business-case.md · Business Case v1.7 (In review) · Develop Business Case (ac_dbzcs) -->
 
 | Criterion | ALT-01 process fix | ALT-02 off-the-shelf platform | ALT-03 outsourced build | ALT-04 CTRS (selected) |
 |---|---|---|---|---|
@@ -388,7 +388,7 @@ The assumptions (Table 2.8) are conditions the plan relies on and that the team 
 
 <div class="asm grouped" markdown="1">
 
-<!-- source: ../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
+<!-- source: ../../../../../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
 
 | Type | ID | Assumption |
 | --- | --- | --- |
@@ -408,7 +408,7 @@ The assumptions (Table 2.8) are conditions the plan relies on and that the team 
 
 <div class="asm grouped" markdown="1">
 
-<!-- source: ../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
+<!-- source: ../../../../../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
 
 | Type | ID | Constraint |
 | --- | --- | --- |
@@ -504,7 +504,7 @@ Customers enter CTRS from the Rich Menu of the restaurant's existing LINE Offici
 
 **Table 2.12 Components of the to-be system**
 
-<!-- source: ../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
+<!-- source: ../../../../../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
 
 | Component | Type | Description |
 |---|---|---|
@@ -522,7 +522,7 @@ The product is delivered in two releases (Table 2.13), each with a goal, a set o
 
 **Table 2.13 Releases**
 
-<!-- source: ../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
+<!-- source: ../../../../../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
 
 | Release | Scope | Delivered by |
 |---|---|---|
@@ -542,7 +542,7 @@ The product is delivered in two releases (Table 2.13), each with a goal, a set o
 
 **Table 2.15 Features for the Customer**
 
-<!-- source: ../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
+<!-- source: ../../../../../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
 
 | Release | ID | Feature | Description | Value | Cost | Priority |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -565,7 +565,7 @@ The product is delivered in two releases (Table 2.13), each with a goal, a set o
 
 **Table 2.16 Features for the Manager (the Owner uses the same back-office read-only)**
 
-<!-- source: ../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
+<!-- source: ../../../../../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
 
 | Release | ID | Feature | Description | Value | Cost | Priority |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -579,7 +579,7 @@ The product is delivered in two releases (Table 2.13), each with a goal, a set o
 
 **Table 2.17 Features for the Front Staff**
 
-<!-- source: ../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
+<!-- source: ../../../../../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
 
 | Release | ID | Feature | Description | Value | Cost | Priority |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -593,7 +593,7 @@ The product is delivered in two releases (Table 2.13), each with a goal, a set o
 
 **Table 2.18 System features (automatic behavior)**
 
-<!-- source: ../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
+<!-- source: ../../../../../../../assignments/group/project/requirements/vision.md · Vision v1.11 (In review) · Develop Vision (ac_dvisn) -->
 
 | Release | ID | Feature | Description | Value | Cost | Priority |
 | --- | --- | --- | --- | --- | --- | --- |
