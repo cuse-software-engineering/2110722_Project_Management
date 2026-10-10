@@ -52,7 +52,16 @@ Same layout as the 2110628 Requirements Engineering repository of the same stude
 
 ```
 assignments/
-  individual/<NN>/    Individual assignments (00 = personality, 01 = review questions, chapters 1 and 2, ...)
+  individual/
+    00/               Personality assignment
+    review_questions/ Online true/false question sets (chapters 1-2, 3-4, ...): problem/ = the questions as
+                      given (.txt), workspace/md/ = the same questions as clean markdown, grouped by chapter,
+                      workspace/answers/ = the answer keys (True/False per question, justification, slide quoted)
+    exercises/<N>/    Exercise N (pdf hand-in): problem/ = the exercise sheet, workspace/md/ = its extraction,
+                      workspace/ = the answer sources (exercise_1: exercise1.md + diagrams/; exercise_2:
+                      solution.md), tools/ = its builder (exercise_1: build_pdf.py renders the markdown;
+                      exercise_2: fill_form.py writes the answers into the lecturer's form), report/ = the
+                      submitted pdf (watayut_6970267821.pdf)
   group/              The term project: project-management report of CTRS (Concert Table Reservation System),
                       the project that 2110628 runs as a tailored RUP requirements project
     problem/          The project brief (.md + .pdf); read-only

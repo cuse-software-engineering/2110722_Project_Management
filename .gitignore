@@ -9,7 +9,7 @@
 !assignments/group/workspace/report/**/*.jpg
 !assignments/group/workspace/report/**/*.jpeg
 # ... the diagram renders embedded in an individual assignment (source .html/.puml next to them)
-!assignments/individual/*/workspace/diagrams/*.png
+!assignments/individual/**/workspace/diagrams/*.png
 # ... and the pictures chosen for assignment 00 (material of the answer, not renders)
 !assignments/individual/00/workspace/**/*.jpg
 !assignments/individual/00/workspace/**/*.jpeg
