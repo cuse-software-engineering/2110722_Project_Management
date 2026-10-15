@@ -822,10 +822,115 @@ def render_gantt():
     print(f"rendered {ASSETS / 'schedule-tasks.png'} ({width}x{height})")
 
 
+# ----------------------------------------------------------------------------------------------------- MS Project XML
+def write_mspdi(path: Path):
+    """The plan as Microsoft Project XML (MSPDI), which ProjectLibre opens (File > Open, file type Microsoft Project
+    XML) and saves as .pod: branches as summary tasks, work packages as fixed-duration tasks pinned to their dates
+    (constraint Start No Earlier Than) with predecessors, milestones, the four engineers as work resources with their
+    hourly rates and assignments (hours and units), the physical items as material resources, and the calendar with
+    the year-end break."""
+    import html as h
+    def dt(d, end=False):
+        return f"{d.isoformat()}T{'17:00:00' if end else '08:00:00'}"
+    def hrs(x):
+        return f"PT{x:g}H0M0S"
+    X = ['<?xml version="1.0" encoding="UTF-8" standalone="yes"?>', '<Project xmlns="http://schemas.microsoft.com/project">',
+         "<SaveVersion>14</SaveVersion><Name>SEATS project plan (Milestone 2)</Name>",
+         "<Title>Seating &amp; Event Availability Tracking System (SEATS) for La Loy Restaurant</Title>",
+         "<Author>SE69 Group 1</Author><CreationDate>2026-10-15T08:00:00</CreationDate>",
+         f"<StartDate>{dt(PROJECT_START)}</StartDate><FinishDate>{dt(PROJECT_END, True)}</FinishDate>",
+         "<ScheduleFromStart>1</ScheduleFromStart><CurrencySymbol>THB</CurrencySymbol><CurrencyCode>THB</CurrencyCode>",
+         "<CalendarUID>1</CalendarUID><DefaultStartTime>08:00:00</DefaultStartTime><DefaultFinishTime>17:00:00</DefaultFinishTime>",
+         "<MinutesPerDay>480</MinutesPerDay><MinutesPerWeek>2400</MinutesPerWeek><DaysPerMonth>20</DaysPerMonth>",
+         "<DefaultTaskType>1</DefaultTaskType><NewTasksEffortDriven>0</NewTasksEffortDriven>",
+         "<Calendars><Calendar><UID>1</UID><Name>Standard</Name><IsBaseCalendar>1</IsBaseCalendar><WeekDays>"]
+    for day in range(1, 8):                               # 1 = Sunday … 7 = Saturday
+        if day in (1, 7):
+            X.append(f"<WeekDay><DayType>{day}</DayType><DayWorking>0</DayWorking></WeekDay>")
+        else:
+            X.append(f"<WeekDay><DayType>{day}</DayType><DayWorking>1</DayWorking><WorkingTimes>"
+                     "<WorkingTime><FromTime>08:00:00</FromTime><ToTime>12:00:00</ToTime></WorkingTime>"
+                     "<WorkingTime><FromTime>13:00:00</FromTime><ToTime>17:00:00</ToTime></WorkingTime></WorkingTimes></WeekDay>")
+    X.append(f"<WeekDay><DayType>0</DayType><DayWorking>0</DayWorking><TimePeriod><FromDate>{BREAK[0].isoformat()}T00:00:00</FromDate>"
+             f"<ToDate>{BREAK[1].isoformat()}T23:59:00</ToDate></TimePeriod></WeekDay>")
+    X.append("</WeekDays></Calendar></Calendars><Tasks>")
+    uid = {}; n = 0
+    X.append(f"<Task><UID>0</UID><ID>0</ID><Name>SEATS project</Name><OutlineLevel>0</OutlineLevel><OutlineNumber>0</OutlineNumber>"
+             f"<Summary>1</Summary><Start>{dt(PROJECT_START)}</Start><Finish>{dt(PROJECT_END, True)}</Finish></Task>")
+    for l2, name, kind in LEVEL2:
+        ts = [t for t in T if t["l2"] == l2]
+        n += 1; uid[l2] = n
+        X.append(f"<Task><UID>{n}</UID><ID>{n}</ID><Name>{h.escape(name)}</Name><OutlineNumber>{l2}</OutlineNumber><OutlineLevel>1</OutlineLevel>"
+                 f"<Summary>1</Summary><Start>{dt(min(t['start'] for t in ts))}</Start><Finish>{dt(max(t['end'] for t in ts), True)}</Finish></Task>")
+        for t in ts:
+            n += 1; uid[t["id"]] = n
+    for mid, name, d, after in MILESTONES:
+        n += 1; uid[mid] = n
+    for l2, name, kind in LEVEL2:
+        for t in T:
+            if t["l2"] != l2:
+                continue
+            u = uid[t["id"]]
+            X.append(f"<Task><UID>{u}</UID><ID>{u}</ID><Name>{h.escape(t['id'] + ' ' + t['wp'])}</Name><Notes>{h.escape(t['act'] + '. Output: ' + t['output'])}</Notes>"
+                     f"<OutlineNumber>{t['id']}</OutlineNumber><OutlineLevel>2</OutlineLevel><Type>1</Type><Summary>0</Summary><Milestone>0</Milestone>"
+                     f"<Duration>{hrs(t['dur'] * 8)}</Duration><DurationFormat>7</DurationFormat><Work>{hrs(t['total'])}</Work>"
+                     f"<Start>{dt(t['start'])}</Start><Finish>{dt(t['end'], True)}</Finish>"
+                     f"<ConstraintType>4</ConstraintType><ConstraintDate>{dt(t['start'])}</ConstraintDate>")
+            for pr in t["preds"]:
+                pid, _, rel = pr.partition(" ")
+                X.append(f"<PredecessorLink><PredecessorUID>{uid[pid]}</PredecessorUID><Type>{ {'': 1, 'SS': 3, 'FF': 0}[rel] }</Type></PredecessorLink>")
+            X.append("</Task>")
+    for mid, name, d, after in MILESTONES:
+        u = uid[mid]
+        X.append(f"<Task><UID>{u}</UID><ID>{u}</ID><Name>{h.escape(mid + ' ' + name)}</Name><OutlineNumber>{u}</OutlineNumber><OutlineLevel>1</OutlineLevel>"
+                 f"<Type>1</Type><Summary>0</Summary><Milestone>1</Milestone><Duration>PT0H0M0S</Duration><DurationFormat>7</DurationFormat>"
+                 f"<Start>{dt(D(d), True)}</Start><Finish>{dt(D(d), True)}</Finish><ConstraintType>4</ConstraintType><ConstraintDate>{dt(D(d), True)}</ConstraintDate>"
+                 f"<PredecessorLink><PredecessorUID>{uid[after]}</PredecessorUID><Type>1</Type></PredecessorLink></Task>")
+    X.append("</Tasks><Resources>")
+    maxu = {"PM": 0.2, "SA": 0.35, "RS": 0.4, "QA": 0.3}
+    ruid = {}
+    for i, k in enumerate(KEYS, 1):
+        ruid[k] = i
+        X.append(f"<Resource><UID>{i}</UID><ID>{i}</ID><Name>{h.escape(NAMES[k])}</Name><Initials>{k}</Initials><Group>{h.escape(MEMBERS[k][1])}</Group>"
+                 f"<Type>1</Type><MaxUnits>{maxu[k]}</MaxUnits><StandardRate>{RATE[k]}</StandardRate><StandardRateFormat>2</StandardRateFormat>"
+                 f"<CalendarUID>1</CalendarUID></Resource>")
+    materials = [("Test devices (Android phone and 10-inch tablet)", 15000), ("Development and staging hosting (month)", 300),
+                 ("Production hosting (month)", 700), ("Domain name and TLS certificate (year)", 1200),
+                 ("Company registration and legal documents", 15000)]
+    for j, (name, cost) in enumerate(materials, len(KEYS) + 1):
+        ruid[name] = j
+        X.append(f"<Resource><UID>{j}</UID><ID>{j}</ID><Name>{h.escape(name)}</Name><Type>0</Type><MaterialLabel>unit</MaterialLabel>"
+                 f"<StandardRate>{cost}</StandardRate><StandardRateFormat>3</StandardRateFormat></Resource>")
+    X.append("</Resources><Assignments>")
+    a = 0
+    for t in T:
+        for k, hh in t["hours"].items():
+            a += 1
+            X.append(f"<Assignment><UID>{a}</UID><TaskUID>{uid[t['id']]}</TaskUID><ResourceUID>{ruid[k]}</ResourceUID><Units>{t['units'][k]:.4f}</Units>"
+                     f"<Work>{hrs(hh)}</Work><Start>{dt(t['start'])}</Start><Finish>{dt(t['end'], True)}</Finish></Assignment>")
+    units_of = {"4.2": [("Test devices (Android phone and 10-inch tablet)", 1)], "5.3": [("Domain name and TLS certificate (year)", 1), ("Production hosting (month)", 1)],
+                "8.3": [("Company registration and legal documents", 1)], "7.1": [("Production hosting (month)", 12)],
+                "1.1": [("Development and staging hosting (month)", 1)], "1.3": [("Development and staging hosting (month)", 2)],
+                "1.4": [("Development and staging hosting (month)", 4)], "1.5": [("Development and staging hosting (month)", 1)],
+                "1.6": [("Development and staging hosting (month)", 4), ("Production hosting (month)", 4)]}
+    for tid, items in units_of.items():
+        t = TASK[tid]
+        for name, units in items:
+            a += 1
+            X.append(f"<Assignment><UID>{a}</UID><TaskUID>{uid[tid]}</TaskUID><ResourceUID>{ruid[name]}</ResourceUID><Units>{units}</Units>"
+                     f"<Start>{dt(t['start'])}</Start><Finish>{dt(t['end'], True)}</Finish></Assignment>")
+    X.append("</Assignments></Project>")
+    path.write_text("\n".join(X), encoding="utf-8")
+    print(f"wrote {path} ({len(T)} tasks, {len(MILESTONES)} milestones, {a} assignments)")
+
+
 if __name__ == "__main__":
     ok = check()
     if "--check" in sys.argv:
         sys.exit(0 if ok else 1)
+    if "--mspdi" in sys.argv:
+        write_mspdi(GROUP / "workspace" / "report" / "milestone2" / "seats-schedule.xml")
+        sys.exit(0)
     for name, text in tables(render=True).items():
         if not name.startswith("_"):
             print(f"<!-- {name} -->\n{text}\n<!-- /{name} -->\n")
