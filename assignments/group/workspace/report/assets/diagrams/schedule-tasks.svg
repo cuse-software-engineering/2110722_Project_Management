@@ -1,0 +1,233 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3500" height="1950" viewBox="0 0 3500 1950" font-family="Laksaman, 'TH Sarabun', sans-serif" font-size="22">
+<rect width="3500" height="1950" fill="#ffffff"/>
+<text x="840" y="40" font-size="34" font-weight="bold" fill="#0b2a4a">Schedule of the SEATS project by work package, 3 August 2026 to 28 July 2028</text>
+<text x="840" y="72" font-size="22" fill="#374151">Bars: work packages (activities) · red with dark outline: critical path · diamonds: milestones · bands: iterations of the tailored RUP</text>
+<line x1="840.0" y1="140" x2="840.0" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="950.3" y1="140" x2="950.3" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="1057.0" y1="140" x2="1057.0" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<text x="1061.0" y="1860" fill="#374151">Oct 2026</text>
+<line x1="1167.2" y1="140" x2="1167.2" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="1273.9" y1="140" x2="1273.9" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="1384.2" y1="140" x2="1384.2" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<text x="1388.2" y="1860" fill="#374151">Jan 2027</text>
+<line x1="1494.4" y1="140" x2="1494.4" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="1594.0" y1="140" x2="1594.0" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="1704.3" y1="140" x2="1704.3" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<text x="1708.3" y="1860" fill="#374151">Apr 2027</text>
+<line x1="1811.0" y1="140" x2="1811.0" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="1921.3" y1="140" x2="1921.3" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="2028.0" y1="140" x2="2028.0" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<text x="2032.0" y="1860" fill="#374151">Jul 2027</text>
+<line x1="2138.2" y1="140" x2="2138.2" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="2248.5" y1="140" x2="2248.5" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="2355.2" y1="140" x2="2355.2" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<text x="2359.2" y="1860" fill="#374151">Oct 2027</text>
+<line x1="2465.4" y1="140" x2="2465.4" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="2572.1" y1="140" x2="2572.1" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="2682.4" y1="140" x2="2682.4" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<text x="2686.4" y="1860" fill="#374151">Jan 2028</text>
+<line x1="2792.7" y1="140" x2="2792.7" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="2895.8" y1="140" x2="2895.8" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="3006.1" y1="140" x2="3006.1" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<text x="3010.1" y="1860" fill="#374151">Apr 2028</text>
+<line x1="3112.8" y1="140" x2="3112.8" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="3223.0" y1="140" x2="3223.0" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<line x1="3329.7" y1="140" x2="3329.7" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<text x="3333.7" y="1860" fill="#374151">Jul 2028</text>
+<line x1="3440.0" y1="140" x2="3440.0" y2="1840" stroke="#e5e7eb" stroke-width="1"/>
+<rect x="847.1" y="110" width="78.2" height="1720" fill="#fafafa" opacity="0.9"/>
+<text x="886.2" y="134" text-anchor="middle" font-weight="bold" fill="#0b2a4a">I1</text>
+<rect x="925.4" y="110" width="32.0" height="1720" fill="#f3f4f6" opacity="0.9"/>
+<text x="941.4" y="134" text-anchor="middle" font-weight="bold" fill="#0b2a4a">I2</text>
+<rect x="957.4" y="110" width="49.8" height="1720" fill="#fafafa" opacity="0.9"/>
+<text x="982.3" y="134" text-anchor="middle" font-weight="bold" fill="#0b2a4a">E1</text>
+<rect x="1007.2" y="110" width="131.6" height="1720" fill="#f3f4f6" opacity="0.9"/>
+<text x="1073.0" y="134" text-anchor="middle" font-weight="bold" fill="#0b2a4a">E2</text>
+<rect x="1145.9" y="110" width="192.1" height="1720" fill="#fafafa" opacity="0.9"/>
+<text x="1241.9" y="134" text-anchor="middle" font-weight="bold" fill="#0b2a4a">C1</text>
+<rect x="1394.9" y="110" width="192.1" height="1720" fill="#f3f4f6" opacity="0.9"/>
+<text x="1490.9" y="134" text-anchor="middle" font-weight="bold" fill="#0b2a4a">C2</text>
+<rect x="1594.0" y="110" width="117.4" height="1720" fill="#fafafa" opacity="0.9"/>
+<text x="1652.7" y="134" text-anchor="middle" font-weight="bold" fill="#0b2a4a">T1</text>
+<rect x="1718.5" y="110" width="291.7" height="1720" fill="#f3f4f6" opacity="0.9"/>
+<text x="1864.4" y="134" text-anchor="middle" font-weight="bold" fill="#0b2a4a">C3</text>
+<rect x="2017.3" y="110" width="117.4" height="1720" fill="#fafafa" opacity="0.9"/>
+<text x="2076.0" y="134" text-anchor="middle" font-weight="bold" fill="#0b2a4a">T2</text>
+<rect x="2141.8" y="110" width="590.4" height="1720" fill="#f3f4f6" opacity="0.9"/>
+<text x="2437.0" y="134" text-anchor="middle" font-weight="bold" fill="#0b2a4a">C4</text>
+<rect x="2739.3" y="110" width="92.5" height="1720" fill="#fafafa" opacity="0.9"/>
+<text x="2785.6" y="134" text-anchor="middle" font-weight="bold" fill="#0b2a4a">T3</text>
+<text x="3421.3" y="134" text-anchor="end" font-weight="bold" fill="#0b2a4a">P1 pilot year</text>
+<text x="828" y="170.4" text-anchor="end" fill="#1f2937" font-weight="normal">1.1 Project plans and baselines</text>
+<rect x="847.1" y="156" width="110.3" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="965.4" y="170.4" fill="#374151" font-size="19">Boonnisa 20h</text>
+<text x="828" y="200.4" text-anchor="end" fill="#1f2937" font-weight="normal">1.2 Risk List and Development Case</text>
+<rect x="872.0" y="186" width="85.4" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="965.4" y="200.4" fill="#374151" font-size="19">Boonnisa 4h, Watayut 8h</text>
+<text x="828" y="230.4" text-anchor="end" fill="#1f2937" font-weight="normal">1.3 Iteration assessments and change control, Elaboration</text>
+<rect x="957.4" y="216" width="181.4" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1146.8" y="230.4" fill="#374151" font-size="19">Boonnisa 28h</text>
+<text x="828" y="260.4" text-anchor="end" fill="#1f2937" font-weight="normal">1.4 Iteration assessments and change control, Release 1.0 Construction</text>
+<rect x="1145.9" y="246" width="441.0" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1594.9" y="260.4" fill="#374151" font-size="19">Boonnisa 64h</text>
+<text x="828" y="290.4" text-anchor="end" fill="#1f2937" font-weight="normal">1.5 Iteration assessments and change control, Release 1.0 Transition</text>
+<rect x="1594.0" y="276" width="117.4" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1719.4" y="290.4" fill="#374151" font-size="19">Boonnisa 12h</text>
+<text x="828" y="320.4" text-anchor="end" fill="#1f2937" font-weight="normal">1.6 Iteration assessments and change control, Release 2.0</text>
+<rect x="1718.5" y="306" width="416.1" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="2142.7" y="320.4" fill="#374151" font-size="19">Boonnisa 46h</text>
+<text x="828" y="350.4" text-anchor="end" fill="#1f2937" font-weight="normal">1.7 Iteration assessments and change control, Release 2.1</text>
+<rect x="2141.8" y="336" width="690.0" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="2839.8" y="350.4" fill="#374151" font-size="19">Boonnisa 28h</text>
+<text x="828" y="380.4" text-anchor="end" fill="#1f2937" font-weight="bold">1.8 Pilot KPI reports and reviews</text>
+<rect x="2141.8" y="366" width="1262.7" height="18" rx="3" fill="#8b1a1a" opacity="1" stroke="#111827" stroke-width="3"/>
+<text x="2133.8" y="380.4" text-anchor="end" fill="#374151" font-size="19">Boonnisa 12h, Watayut 8h</text>
+<text x="828" y="410.4" text-anchor="end" fill="#1f2937" font-weight="bold">1.9 Pilot review, expansion decision and close-out</text>
+<rect x="3411.5" y="396" width="17.8" height="18" rx="3" fill="#8b1a1a" opacity="1" stroke="#111827" stroke-width="3"/>
+<text x="3403.5" y="410.4" text-anchor="end" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 4h, Watayut 4h</text>
+<text x="828" y="440.4" text-anchor="end" fill="#1f2937" font-weight="normal">2.1 Stakeholder requests and problem analysis</text>
+<rect x="847.1" y="426" width="67.6" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="922.7" y="440.4" fill="#374151" font-size="19">Boonnisa 4h, Sirapatr 16h, Chawanakorn 8h</text>
+<text x="828" y="470.4" text-anchor="end" fill="#1f2937" font-weight="bold">2.2 Vision and Glossary</text>
+<rect x="872.0" y="456" width="85.4" height="18" rx="3" fill="#8b1a1a" opacity="1" stroke="#111827" stroke-width="3"/>
+<text x="965.4" y="470.4" fill="#374151" font-size="19">Sirapatr 20h, Chawanakorn 12h</text>
+<text x="828" y="500.4" text-anchor="end" fill="#1f2937" font-weight="bold">2.3 Use-case model and release plan</text>
+<rect x="925.4" y="486" width="32.0" height="18" rx="3" fill="#8b1a1a" opacity="1" stroke="#111827" stroke-width="3"/>
+<text x="965.4" y="500.4" fill="#374151" font-size="19">Sirapatr 4h, Chawanakorn 12h, Watayut 4h</text>
+<text x="828" y="530.4" text-anchor="end" fill="#1f2937" font-weight="bold">2.4 Review records and LCO package</text>
+<rect x="932.5" y="516" width="24.9" height="18" rx="3" fill="#8b1a1a" opacity="1" stroke="#111827" stroke-width="3"/>
+<text x="965.4" y="530.4" fill="#374151" font-size="19">Boonnisa 4h, Watayut 12h</text>
+<text x="828" y="560.4" text-anchor="end" fill="#1f2937" font-weight="bold">3.1 Use-case specifications</text>
+<rect x="957.4" y="546" width="49.8" height="18" rx="3" fill="#8b1a1a" opacity="1" stroke="#111827" stroke-width="3"/>
+<text x="1015.2" y="560.4" fill="#374151" font-size="19">Sirapatr 16h, Chawanakorn 32h, Watayut 4h</text>
+<text x="828" y="590.4" text-anchor="end" fill="#1f2937" font-weight="normal">3.2 Software Requirements Specification and Supplementary Specification</text>
+<rect x="982.3" y="576" width="106.7" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1097.0" y="590.4" fill="#374151" font-size="19">Boonnisa 4h, Sirapatr 12h, Chawanakorn 28h, Watayut 8h</text>
+<text x="828" y="620.4" text-anchor="end" fill="#1f2937" font-weight="normal">3.3 Analysis model and Software Architecture Document</text>
+<rect x="1007.2" y="606" width="106.7" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1121.9" y="620.4" fill="#374151" font-size="19">Boonnisa 4h, Sirapatr 48h, Chawanakorn 8h</text>
+<text x="828" y="650.4" text-anchor="end" fill="#1f2937" font-weight="normal">3.4 User-interface prototype</text>
+<rect x="1032.1" y="636" width="81.8" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1121.9" y="650.4" fill="#374151" font-size="19">Sirapatr 4h, Chawanakorn 24h, Watayut 4h</text>
+<text x="828" y="680.4" text-anchor="end" fill="#1f2937" font-weight="normal">3.5 Payment gateway and LINE sandbox</text>
+<rect x="1007.2" y="666" width="81.8" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1097.0" y="680.4" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 12h, Chawanakorn 4h</text>
+<text x="828" y="710.4" text-anchor="end" fill="#1f2937" font-weight="bold">3.6 Test plan and test cases</text>
+<rect x="1032.1" y="696" width="106.7" height="18" rx="3" fill="#8b1a1a" opacity="1" stroke="#111827" stroke-width="3"/>
+<text x="1146.8" y="710.4" fill="#374151" font-size="19">Boonnisa 4h, Watayut 32h</text>
+<text x="828" y="740.4" text-anchor="end" fill="#1f2937" font-weight="bold">3.7 Requirements reviews, SRS baseline and LCA package</text>
+<rect x="1096.1" y="726" width="42.7" height="18" rx="3" fill="#8b1a1a" opacity="1" stroke="#111827" stroke-width="3"/>
+<text x="1146.8" y="740.4" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 4h, Watayut 16h</text>
+<text x="828" y="770.4" text-anchor="end" fill="#1f2937" font-weight="bold">3.8 Scope baseline, estimates, schedule and cost baseline</text>
+<rect x="1096.1" y="756" width="42.7" height="18" rx="3" fill="#8b1a1a" opacity="1" stroke="#111827" stroke-width="3"/>
+<text x="1146.8" y="770.4" fill="#374151" font-size="19">Boonnisa 8h</text>
+<text x="828" y="800.4" text-anchor="end" fill="#1f2937" font-weight="normal">4.1 Concert rounds, zones and packages</text>
+<rect x="1145.9" y="786" width="67.6" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1221.5" y="800.4" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 16h, Chawanakorn 32h, Watayut 8h</text>
+<text x="828" y="830.4" text-anchor="end" fill="#1f2937" font-weight="normal">4.2 Table map, selection and hold</text>
+<rect x="1170.8" y="816" width="92.5" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1271.3" y="830.4" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 32h, Chawanakorn 36h, Watayut 16h</text>
+<text x="828" y="860.4" text-anchor="end" fill="#1f2937" font-weight="bold">4.3 Gateway payment and callback</text>
+<rect x="1220.6" y="846" width="117.4" height="18" rx="3" fill="#8b1a1a" opacity="1" stroke="#111827" stroke-width="3"/>
+<text x="1345.9" y="860.4" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 40h, Chawanakorn 32h, Watayut 24h</text>
+<text x="828" y="890.4" text-anchor="end" fill="#1f2937" font-weight="normal">4.4 LINE sign-in, staff accounts and role access</text>
+<rect x="1220.6" y="876" width="67.6" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1296.2" y="890.4" fill="#374151" font-size="19">Sirapatr 16h, Chawanakorn 16h, Watayut 8h</text>
+<text x="828" y="920.4" text-anchor="end" fill="#1f2937" font-weight="bold">4.5 C1 integration and iteration test</text>
+<rect x="1295.3" y="906" width="42.7" height="18" rx="3" fill="#8b1a1a" opacity="1" stroke="#111827" stroke-width="3"/>
+<text x="1345.9" y="920.4" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 8h, Chawanakorn 8h, Watayut 24h</text>
+<text x="828" y="950.4" text-anchor="end" fill="#1f2937" font-weight="normal">4.6 QR e-ticket and transactional messages</text>
+<rect x="1394.9" y="936" width="67.6" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1470.4" y="950.4" fill="#374151" font-size="19">Sirapatr 16h, Chawanakorn 32h, Watayut 8h</text>
+<text x="828" y="980.4" text-anchor="end" fill="#1f2937" font-weight="normal">4.7 Door check-in and name lookup</text>
+<rect x="1419.8" y="966" width="92.5" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1520.2" y="980.4" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 16h, Chawanakorn 32h, Watayut 16h</text>
+<text x="828" y="1010.4" text-anchor="end" fill="#1f2937" font-weight="normal">4.8 Live booking view and exception handling</text>
+<rect x="1444.7" y="996" width="92.5" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1545.1" y="1010.4" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 32h, Chawanakorn 32h, Watayut 16h</text>
+<text x="828" y="1040.4" text-anchor="end" fill="#1f2937" font-weight="normal">4.9 Audit trail, backup, consent and push budget</text>
+<rect x="1469.5" y="1026" width="67.6" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1545.1" y="1040.4" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 16h, Chawanakorn 20h, Watayut 8h</text>
+<text x="828" y="1070.4" text-anchor="end" fill="#1f2937" font-weight="bold">4.10 Load test, system test and IOC package</text>
+<rect x="1519.3" y="1056" width="67.6" height="18" rx="3" fill="#8b1a1a" opacity="1" stroke="#111827" stroke-width="3"/>
+<text x="1594.9" y="1070.4" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 32h, Chawanakorn 16h, Watayut 64h</text>
+<text x="828" y="1100.4" text-anchor="end" fill="#1f2937" font-weight="normal">5.1 Acceptance tests of Release 1.0</text>
+<rect x="1594.0" y="1086" width="42.7" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1644.7" y="1100.4" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 8h, Chawanakorn 12h, Watayut 28h</text>
+<text x="828" y="1130.4" text-anchor="end" fill="#1f2937" font-weight="normal">5.2 Training and user guide</text>
+<rect x="1618.9" y="1116" width="42.7" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1669.6" y="1130.4" fill="#374151" font-size="19">Boonnisa 8h, Chawanakorn 16h, Watayut 4h</text>
+<text x="828" y="1160.4" text-anchor="end" fill="#1f2937" font-weight="normal">5.3 Production set-up and data migration</text>
+<rect x="1643.8" y="1146" width="42.7" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1694.5" y="1160.4" fill="#374151" font-size="19">Sirapatr 24h, Chawanakorn 10h, Watayut 8h</text>
+<text x="828" y="1190.4" text-anchor="end" fill="#1f2937" font-weight="bold">5.4 Pilot concert nights and go-live of Release 1.0</text>
+<rect x="1668.7" y="1176" width="42.7" height="18" rx="3" fill="#8b1a1a" opacity="1" stroke="#111827" stroke-width="3"/>
+<text x="1719.4" y="1190.4" fill="#374151" font-size="19">Boonnisa 12h, Sirapatr 8h, Chawanakorn 12h, Watayut 20h</text>
+<text x="828" y="1220.4" text-anchor="end" fill="#1f2937" font-weight="normal">6.1 Scheduled reminders</text>
+<rect x="1718.5" y="1206" width="117.4" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1843.9" y="1220.4" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 32h, Chawanakorn 40h, Watayut 20h</text>
+<text x="828" y="1250.4" text-anchor="end" fill="#1f2937" font-weight="normal">6.2 Grace extension and waitlist</text>
+<rect x="1793.2" y="1236" width="142.3" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1943.5" y="1250.4" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 40h, Chawanakorn 48h, Watayut 28h</text>
+<text x="828" y="1280.4" text-anchor="end" fill="#1f2937" font-weight="normal">6.3 Booking transfer</text>
+<rect x="1867.9" y="1266" width="67.6" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1943.5" y="1280.4" fill="#374151" font-size="19">Sirapatr 16h, Chawanakorn 24h, Watayut 12h</text>
+<text x="828" y="1310.4" text-anchor="end" fill="#1f2937" font-weight="normal">6.4 Reports and Excel export</text>
+<rect x="1892.8" y="1296" width="92.5" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="1993.3" y="1310.4" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 24h, Chawanakorn 32h, Watayut 16h</text>
+<text x="828" y="1340.4" text-anchor="end" fill="#1f2937" font-weight="bold">6.5 C3 integration and system test</text>
+<rect x="1942.6" y="1326" width="67.6" height="18" rx="3" fill="#8b1a1a" opacity="1" stroke="#111827" stroke-width="3"/>
+<text x="2018.2" y="1340.4" fill="#374151" font-size="19">Boonnisa 12h, Sirapatr 32h, Chawanakorn 24h, Watayut 44h</text>
+<text x="828" y="1370.4" text-anchor="end" fill="#1f2937" font-weight="normal">6.6 Acceptance tests and training on Release 2.0</text>
+<rect x="2017.3" y="1356" width="67.6" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="2092.9" y="1370.4" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 14h, Chawanakorn 24h, Watayut 30h</text>
+<text x="828" y="1400.4" text-anchor="end" fill="#1f2937" font-weight="bold">6.7 Release 2.0 deployment and first concert nights</text>
+<rect x="2067.1" y="1386" width="67.6" height="18" rx="3" fill="#8b1a1a" opacity="1" stroke="#111827" stroke-width="3"/>
+<text x="2142.7" y="1400.4" fill="#374151" font-size="19">Boonnisa 12h, Sirapatr 16h, Chawanakorn 16h, Watayut 20h</text>
+<text x="828" y="1430.4" text-anchor="end" fill="#1f2937" font-weight="normal">7.1 Concert-night support and maintenance</text>
+<rect x="2141.8" y="1416" width="1287.6" height="18" rx="3" fill="#9ca3af" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="2133.8" y="1430.4" text-anchor="end" fill="#374151" font-size="19">Chawanakorn 48h, Watayut 48h</text>
+<text x="828" y="1460.4" text-anchor="end" fill="#1f2937" font-weight="normal">8.1 Multi-tenant data model and tenant isolation</text>
+<rect x="2141.8" y="1446" width="192.1" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="2341.8" y="1460.4" fill="#374151" font-size="19">Sirapatr 40h, Chawanakorn 40h, Watayut 16h</text>
+<text x="828" y="1490.4" text-anchor="end" fill="#1f2937" font-weight="normal">8.2 Plans, limits and tier enforcement</text>
+<rect x="2316.1" y="1476" width="142.3" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="2466.3" y="1490.4" fill="#374151" font-size="19">Sirapatr 20h, Chawanakorn 40h, Watayut 20h</text>
+<text x="828" y="1520.4" text-anchor="end" fill="#1f2937" font-weight="normal">8.3 Subscription billing and company set-up</text>
+<rect x="2440.5" y="1506" width="142.3" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="2590.8" y="1520.4" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 24h, Chawanakorn 40h, Watayut 24h</text>
+<text x="828" y="1550.4" text-anchor="end" fill="#1f2937" font-weight="normal">8.4 Self-service onboarding and service administration</text>
+<rect x="2515.2" y="1536" width="142.3" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="2665.5" y="1550.4" fill="#374151" font-size="19">Sirapatr 20h, Chawanakorn 40h, Watayut 20h</text>
+<text x="828" y="1580.4" text-anchor="end" fill="#1f2937" font-weight="normal">8.5 Security, load and integration test of Release 2.1</text>
+<rect x="2614.8" y="1566" width="117.4" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="2740.2" y="1580.4" fill="#374151" font-size="19">Boonnisa 8h, Sirapatr 12h, Chawanakorn 20h, Watayut 28h</text>
+<text x="828" y="1610.4" text-anchor="end" fill="#1f2937" font-weight="normal">8.6 Migration of La Loy and release of the Free-plan sign-up</text>
+<rect x="2739.3" y="1596" width="92.5" height="18" rx="3" fill="#0b2a4a" opacity="0.85" stroke="none" stroke-width="0"/>
+<text x="2731.3" y="1610.4" text-anchor="end" fill="#374151" font-size="19">Boonnisa 4h, Sirapatr 12h, Chawanakorn 20h, Watayut 20h</text>
+<text x="828" y="1640.4" text-anchor="end" fill="#1f2937" font-style="italic">M1 LCO: Lifecycle Objectives</text>
+<polygon points="953.8,1624 964.8,1635.0 953.8,1646 942.8,1635.0" fill="#c9a227" stroke="#111827" stroke-width="2"/>
+<text x="969.8" y="1640.4" fill="#374151" font-size="19">2 Sep 2026</text>
+<text x="828" y="1670.4" text-anchor="end" fill="#1f2937" font-style="italic">M2 LCA: Lifecycle Architecture, SRS baseline</text>
+<polygon points="1135.2,1654 1146.2,1665.0 1135.2,1676 1124.2,1665.0" fill="#c9a227" stroke="#111827" stroke-width="2"/>
+<text x="1151.2" y="1670.4" fill="#374151" font-size="19">23 Oct 2026</text>
+<text x="828" y="1700.4" text-anchor="end" fill="#1f2937" font-style="italic">M3 IOC: Initial Operational Capability</text>
+<polygon points="1583.4,1684 1594.4,1695.0 1583.4,1706 1572.4,1695.0" fill="#c9a227" stroke="#111827" stroke-width="2"/>
+<text x="1599.4" y="1700.4" fill="#374151" font-size="19">26 Feb 2027</text>
+<text x="828" y="1730.4" text-anchor="end" fill="#1f2937" font-style="italic">M4 Release 1.0 Core in operation</text>
+<polygon points="1707.9,1714 1718.9,1725.0 1707.9,1736 1696.9,1725.0" fill="#c9a227" stroke="#111827" stroke-width="2"/>
+<text x="1723.9" y="1730.4" fill="#374151" font-size="19">2 Apr 2027</text>
+<text x="828" y="1760.4" text-anchor="end" fill="#1f2937" font-style="italic">M5 Release 2.0 Growth in operation</text>
+<polygon points="2131.1,1744 2142.1,1755.0 2131.1,1766 2120.1,1755.0" fill="#c9a227" stroke="#111827" stroke-width="2"/>
+<text x="2147.1" y="1760.4" fill="#374151" font-size="19">30 Jul 2027</text>
+<text x="828" y="1790.4" text-anchor="end" fill="#1f2937" font-style="italic">M6 Release 2.1 in operation</text>
+<polygon points="2828.2,1774 2839.2,1785.0 2828.2,1796 2817.2,1785.0" fill="#c9a227" stroke="#111827" stroke-width="2"/>
+<text x="2844.2" y="1790.4" fill="#374151" font-size="19">11 Feb 2028</text>
+<text x="828" y="1820.4" text-anchor="end" fill="#1f2937" font-style="italic">M7 Expansion decision, project closed</text>
+<polygon points="3425.8,1804 3436.8,1815.0 3425.8,1826 3414.8,1815.0" fill="#c9a227" stroke="#111827" stroke-width="2"/>
+<text x="3409.8" y="1820.4" text-anchor="end" fill="#374151" font-size="19">28 Jul 2028</text>
+<rect x="840" y="1914" width="40" height="16" rx="3" fill="#0b2a4a" opacity="0.85"/><text x="888" y="1928" fill="#1f2937">work package</text>
+<rect x="1070" y="1914" width="40" height="16" rx="3" fill="#8b1a1a" stroke="#111827" stroke-width="3"/><text x="1118" y="1928" fill="#1f2937">critical path (zero total slack)</text>
+<rect x="1480" y="1914" width="40" height="16" rx="3" fill="#9ca3af"/><text x="1528" y="1928" fill="#1f2937">pilot support (operating expenditure)</text>
+<polygon points="1940,1912 1951,1922 1940,1932 1929,1922" fill="#c9a227" stroke="#111827" stroke-width="2"/><text x="1960" y="1928" fill="#1f2937">milestone</text>
+</svg>

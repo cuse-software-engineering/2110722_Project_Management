@@ -11,8 +11,9 @@
 The 2110628 repository is found as $REQ_REPO, else the repository this one is nested in, else a sibling folder
 2110628_Requirement (see find_req_repo); paths into it from the milestone files are re-pointed on every build.
 
-Usage:  python3 tools/build_pm_report.py [--milestone 1] [--no-pdf]      (from assignments/group/)
-Output: workspace/report/build/2110722_M1_part1_genai_log.pdf, workspace/report/build/2110722_M1_part2_final_deliverables.pdf
+Usage:  python3 tools/build_pm_report.py [--milestone 1|2] [--no-pdf]    (from assignments/group/)
+Output: workspace/report/build/2110722_M<n>_part1_genai_log.pdf, workspace/report/build/2110722_M<n>_part2_final_deliverables.pdf
+Milestone 2 also expands `<!-- plan: <table> -->` blocks from tools/plan.py (WBS, effort, resources, cost, schedule).
 """
 import argparse
 import html
@@ -42,6 +43,7 @@ sys.path.insert(0, str(GROUP / "tools"))
 import build_report                                     # noqa: E402  (include expander of the group report)
 import build_pdf                                        # noqa: E402  (PDF renderer of the group report)
 import finance                                          # noqa: E402
+import plan                                             # noqa: E402  (Milestone 2 plan model: WBS, effort, cost, schedule)
 
 COURSE = "2110722 Software Project Management"
 LECTURER = "Assoc. Prof. Twittie Senivongse"
@@ -50,9 +52,15 @@ FILES = {  # milestone -> [(source markdown, output stem, subtitle)]
     1: [(REPORT_DIR / "milestone1" / "part1-genai-log.md", "2110722_M1_part1_genai_log", "Milestone 1 · Part 1 GenAI Log"),
         (REPORT_DIR / "milestone1" / "part2-final-deliverables.md", "2110722_M1_part2_final_deliverables",
          "Milestone 1 · Part 2 Final Deliverables: business case, financial analysis, project charter, project organization")],
+    2: [(REPORT_DIR / "milestone2" / "part1-genai-log.md", "2110722_M2_part1_genai_log", "Milestone 2 · Part 1 GenAI Log"),
+        (REPORT_DIR / "milestone2" / "part2-final-deliverables.md", "2110722_M2_part2_final_deliverables",
+         "Milestone 2 · Part 2 Final Deliverables: project scope statement, WBS and tasks, effort estimation, resource assignment and rates, cost estimate, schedule with Gantt chart and critical path")],
 }
+TITLES = {1: "Concert Table Reservation System (CTRS) for La Loy Restaurant",            # the project was renamed after Milestone 1
+          2: "Seating & Event Availability Tracking System (SEATS) for La Loy Restaurant"}
+DATES = {1: "September 2026", 2: "October 2026"}
 INCLUDE_RE = re.compile(r"^<!--\s*include:\s*(.+?)\s*-->\s*\n.*?^<!--\s*/include\s*-->", re.S | re.M)
-FINANCE_RE = re.compile(r"^<!--\s*finance:\s*(\w+)\s*-->\s*\n.*?^<!--\s*/finance\s*-->", re.S | re.M)
+FINANCE_RE = re.compile(r"^<!--\s*(finance|plan):\s*(\w+)\s*-->\s*\n.*?^<!--\s*/\1\s*-->", re.S | re.M)   # generated tables
 REQ_LINK_RE = re.compile(r"(?:\.\./)+assignments/group/")    # a relative path into the 2110628 repository
 
 
@@ -66,6 +74,10 @@ def reroot(text: str, md: Path) -> str:
 def finance_blocks() -> dict[str, str]:
     text, _ = finance.tables()
     return {m.group(1): m.group(2).strip() for m in re.finditer(r"<!-- (\w+) -->\n(.*?)\n<!-- /\1 -->", text, re.S)}
+
+
+def plan_blocks() -> dict[str, str]:
+    return {k: v.strip() for k, v in plan.tables(render=True).items() if not k.startswith("_")}
 
 
 def drop_columns(lines: list[str], names: list[str]) -> list[str]:
@@ -92,7 +104,7 @@ def flatten(lines: list[str]) -> list[str]:
     out = []
     for l in lines:
         t = l.strip()
-        if t.startswith(("<!-- include:", "<!-- /include", "<!-- finance:", "<!-- /finance")):
+        if t.startswith(("<!-- include:", "<!-- /include", "<!-- finance:", "<!-- /finance", "<!-- plan:", "<!-- /plan")):
             continue
         if t.startswith("<!-- source:") and out and out[-1].strip().startswith("<!-- source:"):
             continue
@@ -156,7 +168,7 @@ def split_id(lines: list[str], name: str) -> list[str]:
 
 def expand_file(md: Path) -> None:
     text = md.read_text(encoding="utf-8")
-    fin = finance_blocks()
+    gen = {"finance": finance_blocks(), "plan": plan_blocks() if FINANCE_RE.search(text) and "plan:" in text else {}}
     start = reroot(text, md)
 
     def inc(m):
@@ -167,6 +179,8 @@ def expand_file(md: Path) -> None:
         rename = re.search(r"\s+rename=(\S+)", spec)        # PM-report attribute: rename header cells, old:new[,old:new] (_ = space)
         flat = re.search(r"\s+flat\b", spec)                 # PM-report attribute: quote an already expanded report section as plain text
         block = build_report.expand(md, re.sub(r"\s+(drop|keep|split|rename)=\S+|\s+flat\b", "", spec))
+        if not (md.parent / spec.partition("#")[0].strip()).is_file():   # target absent (2110628 stand-in): the quotation
+            return f"<!-- include: {spec} -->\n" + "\n".join(block) + "\n<!-- /include -->"  # is kept already shaped
         if flat:
             block = flatten(block)
         if drop:
@@ -181,9 +195,10 @@ def expand_file(md: Path) -> None:
         return f"<!-- include: {spec} -->\n" + "\n".join(block) + "\n<!-- /include -->"
 
     def fn(m):
-        if m.group(1) not in fin:
-            raise SystemExit(f"{md.name}: unknown finance block '{m.group(1)}' (known: {', '.join(fin)})")
-        return f"<!-- finance: {m.group(1)} -->\n\n{fin[m.group(1)]}\n\n<!-- /finance -->"
+        kind, name = m.group(1), m.group(2)
+        if name not in gen[kind]:
+            raise SystemExit(f"{md.name}: unknown {kind} block '{name}' (known: {', '.join(gen[kind])})")
+        return f"<!-- {kind}: {name} -->\n\n{gen[kind][name]}\n\n<!-- /{kind} -->"
 
     new = INCLUDE_RE.sub(inc, start)
     new = FINANCE_RE.sub(fn, new)
@@ -213,19 +228,19 @@ def render_part_with_lists(md_path: Path):
 build_pdf.render_part = render_part_with_lists
 
 
-def make_cover(subtitle: str, version: str):
+def make_cover(subtitle: str, version: str, title: str = TITLE, month: str = "September 2026"):
     def cover(_version, _parts):
         members = "".join(f'<tr><td>{n}</td><td class="id">Student ID {i}</td></tr>' for i, n in build_pdf.MEMBERS)
         return f"""<section class="cover">
 <img class="emblem" src="{build_pdf.LOGO_EMBLEM.as_uri()}" alt="Chulalongkorn University">
-<div class="title">{html.escape(TITLE)}</div>
+<div class="title">{html.escape(title)}</div>
 <div class="subtitle">{html.escape(subtitle)}<br>{html.escape(COURSE)}</div>
 <div class="lead">Submitted to</div>
 <div class="lecturer">{html.escape(LECTURER)}</div>
 <div class="members-title">Members</div>
 <div class="group">{html.escape(build_pdf.GROUP_LINE)}</div>
 <table>{members}</table>
-<div class="version">Version {version} · September 2026<br>Software Engineering Program, Department of Computer Engineering, Faculty of Engineering, Chulalongkorn University · Semester 1, Academic Year 2569</div>
+<div class="version">Version {version} · {month}<br>Software Engineering Program, Department of Computer Engineering, Faculty of Engineering, Chulalongkorn University · Semester 1, Academic Year 2569</div>
 </section>"""
     return cover
 
@@ -256,7 +271,7 @@ def build(milestone: int, pdf: bool) -> None:
                               "\ntable.rec td img { max-height: 200mm; width: 100%; }"
                               "\n.keep:has(> table.rec) { break-inside: auto; page-break-inside: auto; }"
                               "\n.toc h2.lot { page-break-before: always; font-size: 24pt; color: #0b2a4a; margin: 0 0 12pt; padding-bottom: 6pt; border-bottom: 2.5pt solid #c9a227; }")
-        build_pdf.cover = make_cover(subtitle, "1.0")
+        build_pdf.cover = make_cover(subtitle, "1.0", TITLES[milestone], DATES[milestone])
         build_pdf.build([md], "v1", REPORT_DIR / "build" / f"{stem}.pdf")
 
 
