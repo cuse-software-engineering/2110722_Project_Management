@@ -256,6 +256,9 @@ def build(milestone: int, pdf: bool) -> None:
         if "hr.pagebreak" not in build_pdf.CSS:      # a `---` rule in the GenAI log starts a new page (one record per page)
             build_pdf.CSS += ("\nhr { border: 0; height: 0; margin: 0; page-break-after: always; } /* hr.pagebreak */"
                               "\ndiv.charter th:nth-child(1) { width: 20%; }"        # project charter: label column
+                              "\ndiv.sched table th:nth-child(1) { width: 6%; } div.sched table th:nth-child(2) { width: 19%; } div.sched table th:nth-child(3) { width: 35%; }"
+                              "\ndiv.sched table th:nth-child(4) { width: 5%; } div.sched table th:nth-child(7) { width: 9%; } div.sched table td:nth-child(5), div.sched table td:nth-child(6) { white-space: nowrap; }"
+                              "\ndiv.effort table th:nth-child(1) { width: 7%; } div.effort table th:nth-child(2) { width: 36%; } div.effort table th:nth-child(3) { width: 13%; }"
                               "\ntable.uc td:first-child { width: 22%; }"
                               "\ntable.rec { border: 1pt solid #4b5563; }"                    # GenAI log record: Item | Content
                               "\ntable.rec > tbody > tr > td { border: 0.6pt solid #6b7280; padding: 5pt 8pt 6pt; vertical-align: top; }"

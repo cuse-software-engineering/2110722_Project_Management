@@ -470,7 +470,7 @@ def md(rows, header):
 
 
 def who(t):
-    return ", ".join(f"{MEMBERS[k][0]} {t['units'][k] * 100:.0f} %" for k in KEYS if k in t["hours"])
+    return ", ".join(f"{k} {t['units'][k] * 100:.0f} %" for k in KEYS if k in t["hours"])
 
 
 def tables(render=False) -> dict[str, str]:
@@ -483,6 +483,27 @@ def tables(render=False) -> dict[str, str]:
             if t["l2"] == l2:
                 rows.append((t["id"], t["wp"], t["it"], t["content"], t["output"]))
     out["wbs"] = md(rows, ["WBS ID", "Work package", "Iteration", "Features / content", "Deliverable (expected output)"])
+
+    # merged WBS and activity list (the short report)
+    rows = []
+    for l2, name, kind in LEVEL2:
+        rows.append((f"**{l2}**", f"**{name}**", "", "", "", "", "", ""))
+        for t in T:
+            if t["l2"] == l2:
+                rows.append((t["id"], f"**{t['wp']}** ({t['it']})", t["act"], t["dur"], fmt_date(t["start"]), fmt_date(t["end"]),
+                             ", ".join(t["preds"]) or "—", who(t)))
+    for mid, name, d, after in MILESTONES:
+        rows.append((mid, f"*{name}*", "", 0, fmt_date(D(d)), fmt_date(D(d)), after, "—"))
+    out["wbs_schedule"] = md(rows, ["WBS ID", "Work package (iteration)", "Activity", "Days", "Start", "Finish", "Predecessors", "Resources (units)"])
+
+    # compact WBS outline (quoted in the GenAI log)
+    rows = []
+    for l2, name, kind in LEVEL2:
+        rows.append((f"**{l2}**", f"**{name}**", "", "", f"*{kind}*"))
+        for t in T:
+            if t["l2"] == l2:
+                rows.append((t["id"], t["wp"], t["it"], MEMBERS[t["owner"]][0], t["output"]))
+    out["wbs_outline"] = md(rows, ["WBS ID", "Work package", "Iteration", "Accountable", "Deliverable (expected output)"])
 
     # WBS dictionary of two work packages
     def entry(t):
@@ -524,8 +545,8 @@ def tables(render=False) -> dict[str, str]:
                 continue
             h = t["hours"]
             opex = t["phase"] == "OPEX"
-            rows.append((t["id"], t["wp"] + (" (operating expenditure, outside the 2,632 h)" if opex else ""),
-                         t["method"], *(f"{h[k]:g}" if k in h else "-" for k in KEYS), f"{t['total']:g}", n(t["labor"])))
+            rows.append((t["id"], t["wp"] + (" (operating expenditure, outside the 2,632 h)" if opex else "") + (" \\*" if t["tp"] else ""),
+                         MEMBERS[t["owner"]][0], *(f"{h[k]:g}" if k in h else "-" for k in KEYS), f"{t['total']:g}", n(t["labor"])))
             if not opex:
                 for k in KEYS:
                     tot[k] += h.get(k, 0)
@@ -533,7 +554,7 @@ def tables(render=False) -> dict[str, str]:
                  f"**{n(sum(tot[k] * RATE[k] for k in KEYS))}**"))
     rows.append(("Rate (THB/h)", "", "", *(str(RATE[k]) for k in KEYS), "", ""))
     rows.append(("**Labor cost (THB)**", "", "", *(f"**{n(tot[k] * RATE[k])}**" for k in KEYS), "", f"**{n(sum(tot[k] * RATE[k] for k in KEYS))}**"))
-    out["effort"] = md(rows, ["WBS ID", "Work package", "Method", *(f"{MEMBERS[k][0]} ({k})" for k in KEYS), "Hours", "Labor (THB)"])
+    out["effort"] = md(rows, ["WBS ID", "Work package (\\* three-point, Table 4.2)", "Accountable", *(f"{MEMBERS[k][0]} ({k})" for k in KEYS), "Hours", "Labor (THB)"])
     out["effort_short"] = "\n".join(l for l in out["effort"].split("\n") if not l.startswith("| 7."))
 
     # three-point estimates
@@ -602,6 +623,24 @@ def tables(render=False) -> dict[str, str]:
             rows.append((t["id"], t["wp"], *cells))
     out["raci"] = md(rows, ["WBS ID", "Work package", *(f"{MEMBERS[k][0]} ({MEMBERS[k][1].split(',')[0]})" for k in KEYS),
                             "Restaurant Owner", "Manager / Front Staff", "Other consulted"])
+    rows = []
+    for l2, name, _ in LEVEL2:
+        ts = [t for t in T if t["l2"] == l2]
+        cells = []
+        for k in KEYS:
+            acc = [t["id"] for t in ts if t["owner"] == k]
+            if acc:
+                cells.append("A/R (" + ", ".join(acc) + ")")
+            elif any(k in t["hours"] for t in ts):
+                cells.append("R")
+            else:
+                cells.append("I")
+        cells.append("C" if any(OWNER in t["consulted"] for t in ts) else "I")
+        cells.append("C" if any(MGR in t["consulted"] or STAFF in t["consulted"] for t in ts) else "I")
+        others = sorted({c for t in ts for c in t["consulted"] if c not in (OWNER, MGR, STAFF)})
+        rows.append((l2, name, *cells, ", ".join(others) or "-"))
+    out["raci_branch"] = md(rows, ["WBS", "Branch", *(f"{MEMBERS[k][0]} ({MEMBERS[k][1].split(',')[0]})" for k in KEYS),
+                                   "Restaurant Owner", "Manager / Front Staff", "Other consulted"])
 
     # cost by WBS item (level 2)
     rows = []; tot_h = tot_l = tot_o = 0; year_cost = {0: 0.0, 1: 0.0}

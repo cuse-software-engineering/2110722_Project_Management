@@ -90,9 +90,7 @@ The project runs from 3 August 2026 to 28 July 2028 (two project years) under th
 
 <!-- /include -->
 
-**2.3 Project Deliverables**
-
-<!-- include: part2-final-deliverables.md#2.3 Project Deliverables flat -->
+<!-- include: part2-final-deliverables.md#Table 2.3 flat -->
 <!-- source: part2-final-deliverables.md -->
 
 **Table 2.3 Project deliverables**
@@ -172,14 +170,10 @@ Requested a criteria/evidence table and a clear distinction between source figur
 </td></tr>
 <tr markdown="1"><td class="k">8. Final Output</td><td markdown="block">
 
-Part 2, Section 2.5, as delivered below, and the cost reconciliation of Section 6.4 (quoted in Record 8). The criteria include booking within 3 minutes, a 35 % no-show reduction, at least 5 transactions a second, response within 2 seconds, check-in within 15 seconds per table and recovery within 2 hours, each with its evidence; the budget figures are retained and reproduced by the bottom-up cost baseline. Review Board decision: Accept.
+Part 2, Table 2.4, as delivered below, and the cost reconciliation of Section 6.4 (Record 8). The criteria include booking within 3 minutes, a 35 % no-show reduction, at least 5 transactions a second, response within 2 seconds, check-in within 15 seconds per table and recovery within 2 hours, each with its evidence; the budget figures are retained and reproduced by the bottom-up cost baseline. Review Board decision: Accept.
 
-**2.5 Project Success Criteria**
-
-<!-- include: part2-final-deliverables.md#2.5 Project Success Criteria flat -->
+<!-- include: part2-final-deliverables.md#Table 2.4 flat -->
 <!-- source: part2-final-deliverables.md -->
-
-The success criteria are the seven criteria of the charter (Table 4.1 of Milestone 1), each with the evidence that shows it is met (Table 2.4). They are also the acceptance criteria of the major deliverables: Release 1.0 is accepted when criteria 2, 3, 5 and 6 are shown on the pilot nights of T1; Release 2.0 when the acceptance tests of F29 to F35 pass; Release 2.1 when La Loy runs on the productized service and the per-shop cost assumption holds.
 
 **Table 2.4 Success criteria and evidence**
 
@@ -250,160 +244,73 @@ Re-decomposed the workstreams to two levels with noun-phrase work packages and a
 </td></tr>
 <tr markdown="1"><td class="k">8. Final Output</td><td markdown="block">
 
-Part 2, Sections 3.1 and 3.2, as delivered below: the WBS as a deliverable-oriented outline and the activity list with owners, dates, dependencies, resources and outputs, keeping the iteration dates of Milestone 1. Review Board decision: Revise; accepted after the revision.
+Part 2, Table 3.1 (the WBS with the activity, dates, dependencies and resources of every work package, keeping the iteration dates of Milestone 1), shown below as the WBS outline with the accountable engineer and the deliverable of each work package. Review Board decision: Revise; accepted after the revision.
 
-**3.1 Work Breakdown Structure**
+**WBS outline** (the activity, dates, predecessors and resources of every work package are in Part 2, Table 3.1)
 
-<!-- include: part2-final-deliverables.md#3.1 Work Breakdown Structure flat -->
-<!-- source: part2-final-deliverables.md -->
+<!-- plan: wbs_outline -->
 
-The WBS (Table 3.1) is a deliverable-oriented decomposition of the total scope: level 1 is the project, level 2 the eight branches (project management, the phases of the tailored RUP by release, the pilot operation), level 3 the 49 work packages, named as nouns. It follows the rules of the course: every unit of work appears in exactly one work package (100 % rule, checked for F1 to F35 and the Release 2.1 items), the work of a branch is the sum of its work packages, each work package has one accountable engineer (Table 5.2), each is described in the WBS dictionary (Section 3.3, two entries printed), and the structure matches how the work is performed, by iteration. Project management is one branch that runs through all phases, so that the Project Manager's status assessments, iteration assessments, change control, milestone reviews, pilot KPI reports and close-out are visible as work of their own. The pilot support of the restaurant (7.1) is in the WBS because it is work of the project team, but its hours are operating expenditure of Year 1 in the financial analysis (Table 3.6 of Milestone 1), not development effort. Work packages are planned in detail up to Release 2.0; the productization iterations (C4, T3) and the pilot year are planned at work-package level only and will be detailed before C4 (rolling wave planning).
-
-
-| WBS ID | Work package | Iteration | Features / content | Deliverable (expected output) |
+| WBS ID | Work package | Iteration | Accountable | Deliverable (expected output) |
 |---|---|---|---|---|
 | **1** | **Project Management** |  |  | *project management (runs through all phases)* |
-| 1.1 | Project plans and baselines | I1, I2 | Milestone 1 artifacts | Business Case, charter, organization chart, SDP (draft), iteration plans |
-| 1.2 | Risk List and Development Case | I1, I2 | Process tailoring, risks | Development Case v1, Risk List |
-| 1.3 | Iteration assessments and change control, Elaboration | E1, E2 | Monitoring and control | Status assessments, iteration assessments, change-request decisions |
-| 1.4 | Iteration assessments and change control, Release 1.0 Construction | C1, C2 | Monitoring and control | Status assessments, iteration assessments, change-request decisions, Risk List updates |
-| 1.5 | Iteration assessments and change control, Release 1.0 Transition | T1 | Monitoring and control | Status assessments, go-live record |
-| 1.6 | Iteration assessments and change control, Release 2.0 | C3, T2 | Monitoring and control | Status assessments, iteration assessments, change-request decisions |
-| 1.7 | Iteration assessments and change control, Release 2.1 | C4, T3 | Monitoring and control | Status assessments, iteration assessments, change-request decisions |
-| 1.8 | Pilot KPI reports and reviews | P1 | Pilot KPIs | Monthly pilot KPI reports, waiting list of restaurants |
-| 1.9 | Pilot review, expansion decision and close-out | CL | Closing | Pilot review, expansion decision record, hand-over record, lessons learned, sign-off |
+| 1.1 | Project plans and baselines | I1, I2 | Boonnisa T. | Business Case, charter, organization chart, SDP (draft), iteration plans |
+| 1.2 | Risk List and Development Case | I1, I2 | Watayut A. | Development Case v1, Risk List |
+| 1.3 | Iteration assessments and change control, Elaboration | E1, E2 | Boonnisa T. | Status assessments, iteration assessments, change-request decisions |
+| 1.4 | Iteration assessments and change control, Release 1.0 Construction | C1, C2 | Boonnisa T. | Status assessments, iteration assessments, change-request decisions, Risk List updates |
+| 1.5 | Iteration assessments and change control, Release 1.0 Transition | T1 | Boonnisa T. | Status assessments, go-live record |
+| 1.6 | Iteration assessments and change control, Release 2.0 | C3, T2 | Boonnisa T. | Status assessments, iteration assessments, change-request decisions |
+| 1.7 | Iteration assessments and change control, Release 2.1 | C4, T3 | Boonnisa T. | Status assessments, iteration assessments, change-request decisions |
+| 1.8 | Pilot KPI reports and reviews | P1 | Boonnisa T. | Monthly pilot KPI reports, waiting list of restaurants |
+| 1.9 | Pilot review, expansion decision and close-out | CL | Boonnisa T. | Pilot review, expansion decision record, hand-over record, lessons learned, sign-off |
 | **2** | **Inception (I1, I2)** |  |  | *Vision, use-case model, LCO* |
-| 2.1 | Stakeholder requests and problem analysis | I1 | P-01 to P-06, RC-01 to RC-07 | Stakeholder Requests, problem and root-cause tables (workshop of RISK-01) |
-| 2.2 | Vision and Glossary | I1, I2 | F1 to F37 | Vision v1, Glossary |
-| 2.3 | Use-case model and release plan | I2 | Release 1.0: F1 to F28; Release 2.0: F29 to F35; Future: F36, F37 | Use-Case Model (outline), release plan |
-| 2.4 | Review records and LCO package | I2 | LCO | Review Records, LCO decision |
+| 2.1 | Stakeholder requests and problem analysis | I1 | Sirapatr C. | Stakeholder Requests, problem and root-cause tables (workshop of RISK-01) |
+| 2.2 | Vision and Glossary | I1, I2 | Sirapatr C. | Vision v1, Glossary |
+| 2.3 | Use-case model and release plan | I2 | Chawanakorn S. | Use-Case Model (outline), release plan |
+| 2.4 | Review records and LCO package | I2 | Watayut A. | Review Records, LCO decision |
 | **3** | **Elaboration (E1, E2)** |  |  | *requirements, architecture, prototype, test plan, LCA* |
-| 3.1 | Use-case specifications | E1 | F2 to F8, F15 to F20 | Use-case specifications |
-| 3.2 | Software Requirements Specification and Supplementary Specification | E1, E2 | F1 to F35, NFR | SRS, Supplementary Specification |
-| 3.3 | Analysis model and Software Architecture Document | E2 | Table 2.12 components | Analysis Model, SAD |
-| 3.4 | User-interface prototype | E2 | Customer and back-office screens | UI prototype, trial records |
-| 3.5 | Payment gateway and LINE sandbox | E2 | CON-07, RISK-03 | Sandbox accounts, onboarding checks, feasibility record |
-| 3.6 | Test plan and test cases | E2 | Table 2.19 targets | Test plan, test cases, load-test design |
-| 3.7 | Requirements reviews, SRS baseline and LCA package | E2 | LCA | Review Records, SRS baseline, LCA decision |
-| 3.8 | Scope baseline, estimates, schedule and cost baseline | E2 | Milestone 2 artifacts | Scope statement, WBS, estimates, schedule and cost baseline, Construction plan |
+| 3.1 | Use-case specifications | E1 | Chawanakorn S. | Use-case specifications |
+| 3.2 | Software Requirements Specification and Supplementary Specification | E1, E2 | Chawanakorn S. | SRS, Supplementary Specification |
+| 3.3 | Analysis model and Software Architecture Document | E2 | Sirapatr C. | Analysis Model, SAD |
+| 3.4 | User-interface prototype | E2 | Chawanakorn S. | UI prototype, trial records |
+| 3.5 | Payment gateway and LINE sandbox | E2 | Sirapatr C. | Sandbox accounts, onboarding checks, feasibility record |
+| 3.6 | Test plan and test cases | E2 | Watayut A. | Test plan, test cases, load-test design |
+| 3.7 | Requirements reviews, SRS baseline and LCA package | E2 | Watayut A. | Review Records, SRS baseline, LCA decision |
+| 3.8 | Scope baseline, estimates, schedule and cost baseline | E2 | Boonnisa T. | Scope statement, WBS, estimates, schedule and cost baseline, Construction plan |
 | **4** | **Release 1.0 Core: Construction (C1, C2)** |  |  | *features F1 to F28, IOC* |
-| 4.1 | Concert rounds, zones and packages | C1 | F10, F11 | Back-office round and layout functions, unit tests |
-| 4.2 | Table map, selection and hold | C1 | F2, F3, F9, F21 | Customer table map and hold, first-lock-wins locking |
-| 4.3 | Gateway payment and callback | C1 | F4, F7, F23 | Payment flow with automatic confirmation |
-| 4.4 | LINE sign-in, staff accounts and role access | C1 | F1, F24 | Sign-in and staff accounts |
-| 4.5 | C1 integration and iteration test | C1 | C1 increment | Tested C1 increment, iteration assessment |
-| 4.6 | QR e-ticket and transactional messages | C2 | F5, F6, F8 | E-ticket and messages |
-| 4.7 | Door check-in and name lookup | C2 | F15 to F20 | Front Staff check-in functions |
-| 4.8 | Live booking view and exception handling | C2 | F12, F13, F14, F27 | Manager's live view and exception functions |
-| 4.9 | Audit trail, backup, consent and push budget | C2 | F22, F25, F26, F28 | System functions of Release 1.0 |
-| 4.10 | Load test, system test and IOC package | C2 | Release 1.0, Table 2.19 targets | Load-test and system-test records, IOC decision |
+| 4.1 | Concert rounds, zones and packages | C1 | Chawanakorn S. | Back-office round and layout functions, unit tests |
+| 4.2 | Table map, selection and hold | C1 | Sirapatr C. | Customer table map and hold, first-lock-wins locking |
+| 4.3 | Gateway payment and callback | C1 | Sirapatr C. | Payment flow with automatic confirmation |
+| 4.4 | LINE sign-in, staff accounts and role access | C1 | Chawanakorn S. | Sign-in and staff accounts |
+| 4.5 | C1 integration and iteration test | C1 | Watayut A. | Tested C1 increment, iteration assessment |
+| 4.6 | QR e-ticket and transactional messages | C2 | Chawanakorn S. | E-ticket and messages |
+| 4.7 | Door check-in and name lookup | C2 | Chawanakorn S. | Front Staff check-in functions |
+| 4.8 | Live booking view and exception handling | C2 | Sirapatr C. | Manager's live view and exception functions |
+| 4.9 | Audit trail, backup, consent and push budget | C2 | Chawanakorn S. | System functions of Release 1.0 |
+| 4.10 | Load test, system test and IOC package | C2 | Watayut A. | Load-test and system-test records, IOC decision |
 | **5** | **Release 1.0 Core: Transition (T1)** |  |  | *acceptance, training, migration, go-live* |
-| 5.1 | Acceptance tests of Release 1.0 | T1 | Acceptance criteria of the charter | Acceptance records |
-| 5.2 | Training and user guide | T1 | Back-office and check-in | Training records, user guide |
-| 5.3 | Production set-up and data migration | T1 | Current bookings, production environment | Production system, migrated data |
-| 5.4 | Pilot concert nights and go-live of Release 1.0 | T1 | Release 1.0 Core | Go-live record, Release 1.0 in operation |
+| 5.1 | Acceptance tests of Release 1.0 | T1 | Watayut A. | Acceptance records |
+| 5.2 | Training and user guide | T1 | Chawanakorn S. | Training records, user guide |
+| 5.3 | Production set-up and data migration | T1 | Sirapatr C. | Production system, migrated data |
+| 5.4 | Pilot concert nights and go-live of Release 1.0 | T1 | Boonnisa T. | Go-live record, Release 1.0 in operation |
 | **6** | **Release 2.0 Growth (C3, T2)** |  |  | *features F29 to F35, go-live* |
-| 6.1 | Scheduled reminders | C3 | F32, F34 | Reminder functions |
-| 6.2 | Grace extension and waitlist | C3 | F29, F30, F35 | Grace and waitlist functions |
-| 6.3 | Booking transfer | C3 | F31 | Transfer function |
-| 6.4 | Reports and Excel export | C3 | F33 | Reports |
-| 6.5 | C3 integration and system test | C3 | Release 2.0 | Tested Release 2.0, iteration assessment |
-| 6.6 | Acceptance tests and training on Release 2.0 | T2 | F29 to F35 | Acceptance and training records |
-| 6.7 | Release 2.0 deployment and first concert nights | T2 | Release 2.0 Growth | Go-live record, Release 2.0 in operation, pilot year begins |
+| 6.1 | Scheduled reminders | C3 | Chawanakorn S. | Reminder functions |
+| 6.2 | Grace extension and waitlist | C3 | Sirapatr C. | Grace and waitlist functions |
+| 6.3 | Booking transfer | C3 | Chawanakorn S. | Transfer function |
+| 6.4 | Reports and Excel export | C3 | Chawanakorn S. | Reports |
+| 6.5 | C3 integration and system test | C3 | Watayut A. | Tested Release 2.0, iteration assessment |
+| 6.6 | Acceptance tests and training on Release 2.0 | T2 | Watayut A. | Acceptance and training records |
+| 6.7 | Release 2.0 deployment and first concert nights | T2 | Boonnisa T. | Go-live record, Release 2.0 in operation, pilot year begins |
 | **7** | **Pilot operation (P1)** |  |  | *concert-night support* |
-| 7.1 | Concert-night support and maintenance | P1 | RISK-04 support routine | Support log, maintenance releases |
+| 7.1 | Concert-night support and maintenance | P1 | Watayut A. | Support log, maintenance releases |
 | **8** | **Release 2.1 Product (C4, T3)** |  |  | *productization, migration of La Loy* |
-| 8.1 | Multi-tenant data model and tenant isolation | C4 | Release 2.1 scope (Section 3.1 of Milestone 1) | Multi-tenant core |
-| 8.2 | Plans, limits and tier enforcement | C4 | Table 3.1 of Milestone 1 | Plan and limit functions |
-| 8.3 | Subscription billing and company set-up | C4 | Billing, legal set-up | Billing functions, company registration, legal documents |
-| 8.4 | Self-service onboarding and service administration | C4 | Onboarding, administration | Onboarding and administration functions |
-| 8.5 | Security, load and integration test of Release 2.1 | C4 | Release 2.1 | Test records, iteration assessment |
-| 8.6 | Migration of La Loy and release of the Free-plan sign-up | T3 | Release 2.1 Product | La Loy on the productized service, Release 2.1 in operation |
+| 8.1 | Multi-tenant data model and tenant isolation | C4 | Sirapatr C. | Multi-tenant core |
+| 8.2 | Plans, limits and tier enforcement | C4 | Chawanakorn S. | Plan and limit functions |
+| 8.3 | Subscription billing and company set-up | C4 | Chawanakorn S. | Billing functions, company registration, legal documents |
+| 8.4 | Self-service onboarding and service administration | C4 | Chawanakorn S. | Onboarding and administration functions |
+| 8.5 | Security, load and integration test of Release 2.1 | C4 | Watayut A. | Test records, iteration assessment |
+| 8.6 | Migration of La Loy and release of the Free-plan sign-up | T3 | Sirapatr C. | La Loy on the productized service, Release 2.1 in operation |
 
-
-**Table 3.1 Work breakdown structure of the SEATS project**
-
-<!-- /include -->
-
-**3.2 Activity List and Milestones**
-
-<!-- include: part2-final-deliverables.md#3.2 Activity List and Milestones flat -->
-<!-- source: part2-final-deliverables.md -->
-
-Each work package is carried out by one activity (verb phrase) with a duration in working days, a start and finish inside the iteration dates of Milestone 1 (Table 2.21), its predecessors (finish-to-start unless marked SS, start-to-start, or FF, finish-to-finish) and the engineers assigned with their units, where 100 % is 8 hours a day (Table 3.2). The seven milestones have zero duration and the dates of the charter. The working-day calendar is Monday to Friday with the year-end break of 21 December 2026 to 1 January 2027 between C1 and C2; Thai public holidays are absorbed by the part-time allocation.
-
-
-| WBS ID | Activity | Duration (working days) | Start | Finish | Predecessors | Resources (units) |
-|---|---|---|---|---|---|---|
-| **1** | **Project Management** |  |  |  |  |  |
-| 1.1 | Produce the business case, the project charter, the organization, the Software Development Plan and the iteration plans I1 and I2 | 23 | 3 Aug 2026 | 2 Sep 2026 | — | Boonnisa T. 11 % |
-| 1.2 | Write the initial Risk List (RISK-01 to RISK-14) and the Development Case that tailors RUP for the project | 18 | 10 Aug 2026 | 2 Sep 2026 | 2.1 SS | Boonnisa T. 3 %, Watayut A. 6 % |
-| 1.3 | Run the weekly status assessments, the E1 and E2 iteration assessments and the Change Control Board | 37 | 3 Sep 2026 | 23 Oct 2026 | 1.1 | Boonnisa T. 9 % |
-| 1.4 | Run the weekly status assessments, the C1 and C2 iteration assessments and the Change Control Board | 80 | 26 Oct 2026 | 26 Feb 2027 | 1.3 | Boonnisa T. 10 % |
-| 1.5 | Run the weekly status assessments, the T1 assessment and the Change Control Board | 25 | 1 Mar 2027 | 2 Apr 2027 | 1.4 | Boonnisa T. 6 % |
-| 1.6 | Run the weekly status assessments, the C3 and T2 iteration assessments and the Change Control Board | 85 | 5 Apr 2027 | 30 Jul 2027 | 1.5 | Boonnisa T. 7 % |
-| 1.7 | Run the status assessments, the C4 and T3 iteration assessments and the Change Control Board | 140 | 2 Aug 2027 | 11 Feb 2028 | 1.6 | Boonnisa T. 2 % |
-| 1.8 | Collect the pilot KPIs of every concert night (booking time, double bookings, no-shows, check-in time, operating cost) and review them monthly with the Owner | 255 | 2 Aug 2027 | 21 Jul 2028 | 6.7 | Boonnisa T. 1 %, Watayut A. 0 % |
-| 1.9 | Review the pilot year against the success criteria of the charter, prepare the expansion decision, record lessons learned and obtain sign-off | 5 | 24 Jul 2028 | 28 Jul 2028 | 1.8 FF, 8.6 | Boonnisa T. 20 %, Sirapatr C. 10 %, Watayut A. 10 % |
-| **2** | **Inception (I1, I2)** |  |  |  |  |  |
-| 2.1 | Interview the Owner and the Manager, observe concert nights, record the stakeholder requests, the problems and their root causes (5 Whys) | 15 | 3 Aug 2026 | 21 Aug 2026 | — | Boonnisa T. 3 %, Sirapatr C. 13 %, Chawanakorn S. 7 % |
-| 2.2 | Write the Vision (problem statement, stakeholders, features F1 to F37 with value, cost and priority) and the Glossary | 18 | 10 Aug 2026 | 2 Sep 2026 | 2.1 SS | Sirapatr C. 14 %, Chawanakorn S. 8 % |
-| 2.3 | Outline the use-case model and assign the features to Release 1.0, Release 2.0 and Future | 7 | 25 Aug 2026 | 2 Sep 2026 | 2.2 SS | Sirapatr C. 7 %, Chawanakorn S. 21 %, Watayut A. 7 % |
-| 2.4 | Review the Inception artifacts against the RUP checkpoints, record the Review Records and assemble the LCO review | 5 | 27 Aug 2026 | 2 Sep 2026 | 2.2 SS, 2.3 SS | Boonnisa T. 10 %, Watayut A. 30 % |
-| **3** | **Elaboration (E1, E2)** |  |  |  |  |  |
-| 3.1 | Specify the two main use cases, Reserve a concert table and Check in with e-ticket, with the Manager and the Front Staff | 10 | 3 Sep 2026 | 16 Sep 2026 | 2.4 | Sirapatr C. 20 %, Chawanakorn S. 40 %, Watayut A. 5 % |
-| 3.2 | Write the SRS and the Supplementary Specification with the quality targets of Table 2.19 of Milestone 1 | 22 | 10 Sep 2026 | 9 Oct 2026 | 3.1 SS | Boonnisa T. 2 %, Sirapatr C. 7 %, Chawanakorn S. 16 %, Watayut A. 5 % |
-| 3.3 | Produce the analysis model and the Software Architecture Document (LIFF front end, back office, application server, central database, LINE and gateway integration) | 22 | 17 Sep 2026 | 16 Oct 2026 | 3.1 | Boonnisa T. 2 %, Sirapatr C. 27 %, Chawanakorn S. 5 % |
-| 3.4 | Prototype the customer and back-office screens and have the Manager, the Front Staff and sample customers try them | 17 | 24 Sep 2026 | 16 Oct 2026 | 3.1 | Sirapatr C. 3 %, Chawanakorn S. 18 %, Watayut A. 3 % |
-| 3.5 | Open the gateway sandbox and the LINE Developers channel, verify the merchant onboarding and the LIFF and Messaging API settings (RISK-03, external dependency) | 17 | 17 Sep 2026 | 9 Oct 2026 | 2.4 | Boonnisa T. 6 %, Sirapatr C. 9 %, Chawanakorn S. 3 % |
-| 3.6 | Write the test plan and the test cases of the two main use cases, including the load-test design for 5 transactions a second (RISK-05) | 22 | 24 Sep 2026 | 23 Oct 2026 | 3.1 | Boonnisa T. 2 %, Watayut A. 18 % |
-| 3.7 | Review the SRS, the SAD, the prototype and the test plan against the checkpoints, baseline the SRS and assemble the LCA review | 10 | 12 Oct 2026 | 23 Oct 2026 | 3.2, 3.3 SS, 3.4 SS, 3.6 SS | Boonnisa T. 10 %, Sirapatr C. 5 %, Watayut A. 20 % |
-| 3.8 | Produce the scope statement, the WBS and dictionary, the effort, resource and cost estimates, the schedule and cost baseline (this document) and the Construction plan | 10 | 12 Oct 2026 | 23 Oct 2026 | 3.2 SS | Boonnisa T. 10 % |
-| **4** | **Release 1.0 Core: Construction (C1, C2)** |  |  |  |  |  |
-| 4.1 | Design, implement and unit-test the management of concert rounds, zones, table types, packages and prices | 15 | 26 Oct 2026 | 13 Nov 2026 | 3.7 | Boonnisa T. 7 %, Sirapatr C. 13 %, Chawanakorn S. 27 %, Watayut A. 7 % |
-| 4.2 | Implement the round list, the real-time table map, the table selection with the 15-minute hold and the automatic hold release | 20 | 2 Nov 2026 | 27 Nov 2026 | 4.1 SS | Boonnisa T. 5 %, Sirapatr C. 20 %, Chawanakorn S. 22 %, Watayut A. 10 % |
-| 4.3 | Integrate the hosted checkout, the booking terms, the payment webhook and the automatic confirmation of the booking | 25 | 16 Nov 2026 | 18 Dec 2026 | 3.5, 4.2 SS | Boonnisa T. 4 %, Sirapatr C. 20 %, Chawanakorn S. 16 %, Watayut A. 12 % |
-| 4.4 | Implement LINE Login, the back-office accounts and the role-based access of Manager, Front Staff and Owner | 15 | 16 Nov 2026 | 4 Dec 2026 | 3.7 | Sirapatr C. 13 %, Chawanakorn S. 13 %, Watayut A. 7 % |
-| 4.5 | Integrate the C1 increment, run the iteration tests and the C1 assessment | 10 | 7 Dec 2026 | 18 Dec 2026 | 4.1, 4.2, 4.3 SS, 4.4 | Boonnisa T. 10 %, Sirapatr C. 10 %, Chawanakorn S. 10 %, Watayut A. 30 % |
-| 4.6 | Implement the QR e-ticket, the customer's booking list and the transactional LINE messages | 15 | 4 Jan 2027 | 22 Jan 2027 | 4.5 | Sirapatr C. 13 %, Chawanakorn S. 27 %, Watayut A. 7 % |
-| 4.7 | Implement the QR scan, the ticket details, the check-in, the invalid-ticket escalation, the no-show release and the name lookup | 20 | 11 Jan 2027 | 5 Feb 2027 | 4.6 SS | Boonnisa T. 5 %, Sirapatr C. 10 %, Chawanakorn S. 20 %, Watayut A. 10 % |
-| 4.8 | Implement the live booking view, the ticket escalation, the manual overrides and the degraded-mode switch | 20 | 18 Jan 2027 | 12 Feb 2027 | 4.6 | Boonnisa T. 5 %, Sirapatr C. 20 %, Chawanakorn S. 20 %, Watayut A. 10 % |
-| 4.9 | Implement the audit trail, the daily backup with Excel export, the consent and profile access and the push-message budget | 15 | 25 Jan 2027 | 12 Feb 2027 | 4.6 | Boonnisa T. 7 %, Sirapatr C. 13 %, Chawanakorn S. 17 %, Watayut A. 7 % |
-| 4.10 | Run the load test (5 transactions a second at booking-open time), the system test of Release 1.0 and assemble the IOC review | 15 | 8 Feb 2027 | 26 Feb 2027 | 4.7, 4.8, 4.9 | Boonnisa T. 7 %, Sirapatr C. 27 %, Chawanakorn S. 13 %, Watayut A. 53 % |
-| **5** | **Release 1.0 Core: Transition (T1)** |  |  |  |  |  |
-| 5.1 | Run the acceptance tests of the two main use cases with the Manager and the Front Staff | 10 | 1 Mar 2027 | 12 Mar 2027 | 4.10 | Boonnisa T. 10 %, Sirapatr C. 10 %, Chawanakorn S. 15 %, Watayut A. 35 % |
-| 5.2 | Train the Manager and the Front Staff and hand over the user guide | 10 | 8 Mar 2027 | 19 Mar 2027 | 5.1 SS | Boonnisa T. 10 %, Chawanakorn S. 20 %, Watayut A. 5 % |
-| 5.3 | Set up the production hosting, the domain and the gateway merchant account of La Loy, and migrate the current bookings | 10 | 15 Mar 2027 | 26 Mar 2027 | 5.1 | Sirapatr C. 30 %, Chawanakorn S. 12 %, Watayut A. 10 % |
-| 5.4 | Support the first concert nights on site, fix the defects found and declare Release 1.0 in operation | 10 | 22 Mar 2027 | 2 Apr 2027 | 5.2, 5.3 | Boonnisa T. 15 %, Sirapatr C. 10 %, Chawanakorn S. 15 %, Watayut A. 25 % |
-| **6** | **Release 2.0 Growth (C3, T2)** |  |  |  |  |  |
-| 6.1 | Implement the reminder scheduling and the scheduled LINE reminders within the push-message budget | 25 | 5 Apr 2027 | 7 May 2027 | 5.4 | Boonnisa T. 4 %, Sirapatr C. 16 %, Chawanakorn S. 20 %, Watayut A. 10 % |
-| 6.2 | Implement the grace extension, the waitlist and the waitlist offer (rules decided by the Owner, RISK-08) | 30 | 26 Apr 2027 | 4 Jun 2027 | 6.1 SS | Boonnisa T. 3 %, Sirapatr C. 17 %, Chawanakorn S. 20 %, Watayut A. 12 % |
-| 6.3 | Implement the official transfer of a confirmed booking to another LINE account | 15 | 17 May 2027 | 4 Jun 2027 | 6.1 | Sirapatr C. 13 %, Chawanakorn S. 20 %, Watayut A. 10 % |
-| 6.4 | Implement the booking, revenue, artist-popularity and customer-history reports with export to Excel | 20 | 24 May 2027 | 18 Jun 2027 | 6.1 | Boonnisa T. 5 %, Sirapatr C. 15 %, Chawanakorn S. 20 %, Watayut A. 10 % |
-| 6.5 | Integrate Release 2.0, run the regression and system tests and the C3 assessment | 15 | 7 Jun 2027 | 25 Jun 2027 | 6.2, 6.3, 6.4 | Boonnisa T. 10 %, Sirapatr C. 27 %, Chawanakorn S. 20 %, Watayut A. 37 % |
-| 6.6 | Run the acceptance tests of the new features with the Manager and train the staff on them | 15 | 28 Jun 2027 | 16 Jul 2027 | 6.5 | Boonnisa T. 7 %, Sirapatr C. 12 %, Chawanakorn S. 20 %, Watayut A. 25 % |
-| 6.7 | Deploy Release 2.0, support the first concert nights and declare Release 2.0 in operation | 15 | 12 Jul 2027 | 30 Jul 2027 | 6.6 SS | Boonnisa T. 10 %, Sirapatr C. 13 %, Chawanakorn S. 13 %, Watayut A. 17 % |
-| **7** | **Pilot operation (P1)** |  |  |  |  |  |
-| 7.1 | Support the pilot restaurant on concert nights (on-call engineer) and maintain the system: 8 hours a month, costed as operating expenditure of Year 1 in Milestone 1 (Table 3.6), outside the 2,632 development hours | 260 | 2 Aug 2027 | 28 Jul 2028 | 6.7 | Chawanakorn S. 2 %, Watayut A. 2 % |
-| **8** | **Release 2.1 Product (C4, T3)** |  |  |  |  |  |
-| 8.1 | Design and implement the multi-tenant data model, the tenant isolation and the migration path of La Loy's data | 40 | 2 Aug 2027 | 24 Sep 2027 | 6.7 | Sirapatr C. 12 %, Chawanakorn S. 12 %, Watayut A. 5 % |
-| 8.2 | Implement the Free, Standard and Premium plans, their limits and the automatic enforcement of the limits | 30 | 20 Sep 2027 | 29 Oct 2027 | 8.1 | Sirapatr C. 8 %, Chawanakorn S. 17 %, Watayut A. 8 % |
-| 8.3 | Implement the subscription billing and the setup-fee invoicing; register the company and publish the terms of service, privacy policy and data-processing agreement | 30 | 25 Oct 2027 | 3 Dec 2027 | 8.2 SS | Boonnisa T. 3 %, Sirapatr C. 10 %, Chawanakorn S. 17 %, Watayut A. 10 % |
-| 8.4 | Implement the self-service onboarding of a restaurant (zone map, packages, gateway and LINE set-up) and the service administration console | 30 | 15 Nov 2027 | 24 Dec 2027 | 8.2 | Sirapatr C. 8 %, Chawanakorn S. 17 %, Watayut A. 8 % |
-| 8.5 | Run the multi-tenant security test, the load test and the system test of Release 2.1 and the C4 assessment | 25 | 13 Dec 2027 | 14 Jan 2028 | 8.3, 8.4 SS | Boonnisa T. 4 %, Sirapatr C. 6 %, Chawanakorn S. 10 %, Watayut A. 14 % |
-| 8.6 | Migrate La Loy to the productized service, release the Free-plan sign-up and hand over to the support routine | 20 | 17 Jan 2028 | 11 Feb 2028 | 8.5 | Boonnisa T. 2 %, Sirapatr C. 8 %, Chawanakorn S. 12 %, Watayut A. 12 % |
-| M1 | *LCO: Lifecycle Objectives* | 0 | 2 Sep 2026 | 2 Sep 2026 | 2.4 | — |
-| M2 | *LCA: Lifecycle Architecture, SRS baseline* | 0 | 23 Oct 2026 | 23 Oct 2026 | 3.7 | — |
-| M3 | *IOC: Initial Operational Capability* | 0 | 26 Feb 2027 | 26 Feb 2027 | 4.10 | — |
-| M4 | *Release 1.0 Core in operation* | 0 | 2 Apr 2027 | 2 Apr 2027 | 5.4 | — |
-| M5 | *Release 2.0 Growth in operation* | 0 | 30 Jul 2027 | 30 Jul 2027 | 6.7 | — |
-| M6 | *Release 2.1 in operation* | 0 | 11 Feb 2028 | 11 Feb 2028 | 8.6 | — |
-| M7 | *Expansion decision, project closed* | 0 | 28 Jul 2028 | 28 Jul 2028 | 1.9 | — |
-
-
-**Table 3.2 Activity list with duration, dates, predecessors and resources**
-
-<!-- /include -->
+<!-- /plan -->
 
 </td></tr>
 </table>
@@ -460,14 +367,12 @@ Applied the standard float formulas (TS = LS − ES = LF − EF), traced the con
 </td></tr>
 <tr markdown="1"><td class="k">8. Final Output</td><td markdown="block">
 
-Part 2, Sections 7.2 and 7.3, as delivered below (the Gantt chart, Figure 7.1, is in Part 2). Source milestones remain unchanged; the critical path I1 to T2, then the pilot year and the close-out, is justified by the float table and presented as a planning analysis. Review Board decision: Accept.
+Part 2, Tables 7.1 and 7.2, as delivered below (the Gantt chart, Figure 7.1, and the discussion of Section 7.2 are in Part 2). Source milestones remain unchanged; the critical path I1 to T2, then the pilot year and the close-out, is justified by the float table and presented as a planning analysis. Review Board decision: Accept.
 
-**7.2 Critical Path**
-
-<!-- include: part2-final-deliverables.md#7.2 Critical Path flat no-images -->
+<!-- include: part2-final-deliverables.md#Table 7.1 flat -->
 <!-- source: part2-final-deliverables.md -->
 
-The critical path is calculated on the iteration network with the forward and backward pass in working days (Table 7.1): ES and EF from the predecessors, LS and LF from the project finish, total slack TS = LS − ES = LF − EF. The iterations are linked finish-to-start as the Development Case prescribes; the pilot year P1 and the productization branch C4, T3 both start after Release 2.0 is in operation, and the close-out follows T3 and finishes together with the pilot year (finish-to-finish), because the expansion decision needs both the pilot KPIs and the productized service. The project is 510 working days long. The zero-slack path is I1, I2, E1, E2, C1, C2, T1, C3, T2, P1 and the close-out: every iteration up to Release 2.0 is critical, because each starts when the previous one ends, and after Release 2.0 the pilot year drives the finish date, since its 260 working days of KPI measurement are longer than the 140 working days of C4 and T3. The productization branch has 115 working days of total slack, so a delay of Release 2.1 by up to 23 weeks would not move the expansion decision; a delay of any iteration up to T2, or a shorter pilot year, would. This is a planning analysis: the task-level dependencies inside an iteration are in Table 3.2, and the critical work packages within the critical iterations are the ones that end on the iteration's last day and feed the next iteration (Table 7.2). If an iteration threatens its milestone, the responses are, in order, the re-planning of priority-2 features (RISK-02), fast-tracking the next iteration's design work in parallel with the current iteration's test package, and crashing by raising the engineers' hours a week within the contingency reserve.
+**Table 7.1 Critical path method on the iteration network (working days from 3 August 2026)**
 
 
 | ID | Iteration | Duration (wd) | Predecessors | ES | EF | LS | LF | Total slack (wd) | Critical | Early start | Early finish |
@@ -486,37 +391,12 @@ The critical path is calculated on the iteration network with the forward and ba
 | T3 | Transition T3 | 20 | C4 | 370 | 390 | 485 | 505 | 115 | No | 17 Jan 2028 | 11 Feb 2028 |
 | CL | Close-out | 5 | T3, P1 (FF) | 505 | 510 | 505 | 510 | 0 | Yes | 24 Jul 2028 | 28 Jul 2028 |
 
-
-**Table 7.1 Critical path method on the iteration network (working days from 3 August 2026)**
-
-
-| WBS ID | Work package | Iteration | Finish | Milestone or successor |
-|---|---|---|---|---|
-| 1.8 | Pilot KPI reports and reviews | P1 | 21 Jul 2028 | feeds the next iteration |
-| 1.9 | Pilot review, expansion decision and close-out | CL | 28 Jul 2028 | Expansion decision, project closed |
-| 2.2 | Vision and Glossary | I1, I2 | 2 Sep 2026 | feeds the next iteration |
-| 2.3 | Use-case model and release plan | I2 | 2 Sep 2026 | feeds the next iteration |
-| 2.4 | Review records and LCO package | I2 | 2 Sep 2026 | LCO: Lifecycle Objectives |
-| 3.1 | Use-case specifications | E1 | 16 Sep 2026 | feeds the next iteration |
-| 3.6 | Test plan and test cases | E2 | 23 Oct 2026 | feeds the next iteration |
-| 3.7 | Requirements reviews, SRS baseline and LCA package | E2 | 23 Oct 2026 | LCA: Lifecycle Architecture, SRS baseline |
-| 3.8 | Scope baseline, estimates, schedule and cost baseline | E2 | 23 Oct 2026 | feeds the next iteration |
-| 4.3 | Gateway payment and callback | C1 | 18 Dec 2026 | feeds the next iteration |
-| 4.5 | C1 integration and iteration test | C1 | 18 Dec 2026 | feeds the next iteration |
-| 4.10 | Load test, system test and IOC package | C2 | 26 Feb 2027 | IOC: Initial Operational Capability |
-| 5.4 | Pilot concert nights and go-live of Release 1.0 | T1 | 2 Apr 2027 | Release 1.0 Core in operation |
-| 6.5 | C3 integration and system test | C3 | 25 Jun 2027 | feeds the next iteration |
-| 6.7 | Release 2.0 deployment and first concert nights | T2 | 30 Jul 2027 | Release 2.0 Growth in operation |
-
-
-**Table 7.2 Work packages on the critical path**
-
 <!-- /include -->
 
-**7.3 Milestone Control Points**
-
-<!-- include: part2-final-deliverables.md#7.3 Milestone Control Points flat -->
+<!-- include: part2-final-deliverables.md#Table 7.2 flat -->
 <!-- source: part2-final-deliverables.md -->
+
+**Table 7.2 Milestones and their acceptance decisions**
 
 
 | ID | Milestone | Date | After | Acceptance / decision |
@@ -528,9 +408,6 @@ The critical path is calculated on the iteration network with the forward and ba
 | M5 | Release 2.0 Growth in operation | 30 Jul 2027 | 6.7 | Acceptance tests of the Release 2.0 features passed; pilot year and KPI measurement begin |
 | M6 | Release 2.1 in operation | 11 Feb 2028 | 8.6 | La Loy migrated to the productized service; Free-plan sign-up released; hand-over to the support routine |
 | M7 | Expansion decision, project closed | 28 Jul 2028 | 1.9 | Pilot review against the seven success criteria of the charter; expansion decision of the software house; lessons learned; sign-off |
-
-
-**Table 7.3 Milestones and their acceptance decisions**
 
 <!-- /include -->
 
@@ -589,91 +466,12 @@ Rebalanced the work-package hours to exact zero variance with the source baselin
 </td></tr>
 <tr markdown="1"><td class="k">8. Final Output</td><td markdown="block">
 
-Part 2, Section 4, as delivered below: the basis of estimates, the effort per work package and engineer, the three-point estimates and the comparison with the top-down estimate (0 % in total, below 8 % per phase). Review Board decision: Revise; accepted after the revision.
+Part 2, Tables 4.2 and 4.3, as delivered below, and the effort per work package and engineer of Table 4.1 (in Part 2): the three-point estimates and the comparison with the top-down estimate (0 % in total, below 8 % per phase). Review Board decision: Revise; accepted after the revision.
 
-**4. Effort Estimation**
-
-<!-- include: part2-final-deliverables.md#4. Effort Estimation flat -->
+<!-- include: part2-final-deliverables.md#Table 4.2 flat -->
 <!-- source: part2-final-deliverables.md -->
 
-**4.1 Basis of Estimates**
-
-Effort is estimated in person-hours per work package, bottom-up, by the engineer who will do the work and reviewed by the Quality Assurance role; duration is derived from the effort and the engineer's part-time availability, not the other way round. The assumptions are those of Milestone 1: the four engineers work part-time at the hours a week per phase of Table 3.4 of Milestone 1 (for example 16 hours a week for the Requirements Specifier in Construction), at the software house's internal cost rates of 300 and 350 THB an hour; a working week has five days of 8 hours; the two Construction iterations of Release 1.0 deliver the 28 features of priority 1 and 2 and C3 the seven features of priority 3. Two techniques are used and compared, as the course asks: the bottom-up estimate per work package (Section 4.2, with three-point estimates for the four risky packages, Section 4.3) and the top-down estimate per phase of Milestone 1 (Section 4.4). The Review Board decided (Table 1.1, row 5) to allocate the bottom-up hours within the phase totals of Milestone 1, so that the labor cost stays at 846,600 THB and the cost baseline at the budget of the charter; the estimate therefore moves from the budgetary accuracy of Milestone 1 (−10 % to +25 %) toward a definitive estimate (−5 % to +10 %) for the iterations up to Release 2.0, while C4 and T3 remain at budgetary accuracy until they are detailed before C4.
-
-**4.2 Bottom-up Estimate per Work Package**
-
-Table 4.1 gives the hours of each engineer on each work package, the estimation method and the labor cost at the rates of Table 5.1. The 96 hours of concert-night support (7.1) are shown for completeness but are operating expenditure (28,800 THB in Table 3.6 of Milestone 1), outside the 2,632 development hours.
-
-
-| WBS ID | Work package | Method | Boonnisa T. (PM) | Sirapatr C. (SA) | Chawanakorn S. (RS) | Watayut A. (QA) | Hours | Labor (THB) |
-|---|---|---|---|---|---|---|---|---|
-| **1** | **Project Management** |  |  |  |  |  |  |  |
-| 1.1 | Project plans and baselines | bottom-up | 20 | - | - | - | 20 | 7,000 |
-| 1.2 | Risk List and Development Case | bottom-up | 4 | - | - | 8 | 12 | 3,800 |
-| 1.3 | Iteration assessments and change control, Elaboration | bottom-up | 28 | - | - | - | 28 | 9,800 |
-| 1.4 | Iteration assessments and change control, Release 1.0 Construction | bottom-up | 64 | - | - | - | 64 | 22,400 |
-| 1.5 | Iteration assessments and change control, Release 1.0 Transition | bottom-up | 12 | - | - | - | 12 | 4,200 |
-| 1.6 | Iteration assessments and change control, Release 2.0 | bottom-up | 46 | - | - | - | 46 | 16,100 |
-| 1.7 | Iteration assessments and change control, Release 2.1 | bottom-up | 28 | - | - | - | 28 | 9,800 |
-| 1.8 | Pilot KPI reports and reviews | bottom-up | 12 | - | - | 8 | 20 | 6,600 |
-| 1.9 | Pilot review, expansion decision and close-out | bottom-up | 8 | 4 | - | 4 | 16 | 5,400 |
-| **2** | **Inception (I1, I2)** |  |  |  |  |  |  |  |
-| 2.1 | Stakeholder requests and problem analysis | bottom-up | 4 | 16 | 8 | - | 28 | 9,400 |
-| 2.2 | Vision and Glossary | bottom-up | - | 20 | 12 | - | 32 | 10,600 |
-| 2.3 | Use-case model and release plan | bottom-up | - | 4 | 12 | 4 | 20 | 6,200 |
-| 2.4 | Review records and LCO package | bottom-up | 4 | - | - | 12 | 16 | 5,000 |
-| **3** | **Elaboration (E1, E2)** |  |  |  |  |  |  |  |
-| 3.1 | Use-case specifications | bottom-up | - | 16 | 32 | 4 | 52 | 16,400 |
-| 3.2 | Software Requirements Specification and Supplementary Specification | bottom-up | 4 | 12 | 28 | 8 | 52 | 16,400 |
-| 3.3 | Analysis model and Software Architecture Document | bottom-up | 4 | 48 | 8 | - | 60 | 20,600 |
-| 3.4 | User-interface prototype | bottom-up | - | 4 | 24 | 4 | 32 | 9,800 |
-| 3.5 | Payment gateway and LINE sandbox | bottom-up | 8 | 12 | 4 | - | 24 | 8,200 |
-| 3.6 | Test plan and test cases | bottom-up | 4 | - | - | 32 | 36 | 11,000 |
-| 3.7 | Requirements reviews, SRS baseline and LCA package | bottom-up | 8 | 4 | - | 16 | 28 | 9,000 |
-| 3.8 | Scope baseline, estimates, schedule and cost baseline | bottom-up | 8 | - | - | - | 8 | 2,800 |
-| **4** | **Release 1.0 Core: Construction (C1, C2)** |  |  |  |  |  |  |  |
-| 4.1 | Concert rounds, zones and packages | bottom-up | 8 | 16 | 32 | 8 | 64 | 20,400 |
-| 4.2 | Table map, selection and hold | bottom-up | 8 | 32 | 36 | 16 | 92 | 29,600 |
-| 4.3 | Gateway payment and callback | three-point | 8 | 40 | 32 | 24 | 104 | 33,600 |
-| 4.4 | LINE sign-in, staff accounts and role access | bottom-up | - | 16 | 16 | 8 | 40 | 12,800 |
-| 4.5 | C1 integration and iteration test | bottom-up | 8 | 8 | 8 | 24 | 48 | 15,200 |
-| 4.6 | QR e-ticket and transactional messages | bottom-up | - | 16 | 32 | 8 | 56 | 17,600 |
-| 4.7 | Door check-in and name lookup | bottom-up | 8 | 16 | 32 | 16 | 72 | 22,800 |
-| 4.8 | Live booking view and exception handling | bottom-up | 8 | 32 | 32 | 16 | 88 | 28,400 |
-| 4.9 | Audit trail, backup, consent and push budget | bottom-up | 8 | 16 | 20 | 8 | 52 | 16,800 |
-| 4.10 | Load test, system test and IOC package | three-point | 8 | 32 | 16 | 64 | 120 | 38,000 |
-| **5** | **Release 1.0 Core: Transition (T1)** |  |  |  |  |  |  |  |
-| 5.1 | Acceptance tests of Release 1.0 | bottom-up | 8 | 8 | 12 | 28 | 56 | 17,600 |
-| 5.2 | Training and user guide | bottom-up | 8 | - | 16 | 4 | 28 | 8,800 |
-| 5.3 | Production set-up and data migration | bottom-up | - | 24 | 10 | 8 | 42 | 13,800 |
-| 5.4 | Pilot concert nights and go-live of Release 1.0 | bottom-up | 12 | 8 | 12 | 20 | 52 | 16,600 |
-| **6** | **Release 2.0 Growth (C3, T2)** |  |  |  |  |  |  |  |
-| 6.1 | Scheduled reminders | three-point | 8 | 32 | 40 | 20 | 100 | 32,000 |
-| 6.2 | Grace extension and waitlist | bottom-up | 8 | 40 | 48 | 28 | 124 | 39,600 |
-| 6.3 | Booking transfer | bottom-up | - | 16 | 24 | 12 | 52 | 16,400 |
-| 6.4 | Reports and Excel export | bottom-up | 8 | 24 | 32 | 16 | 80 | 25,600 |
-| 6.5 | C3 integration and system test | bottom-up | 12 | 32 | 24 | 44 | 112 | 35,800 |
-| 6.6 | Acceptance tests and training on Release 2.0 | bottom-up | 8 | 14 | 24 | 30 | 76 | 23,900 |
-| 6.7 | Release 2.0 deployment and first concert nights | bottom-up | 12 | 16 | 16 | 20 | 64 | 20,600 |
-| **7** | **Pilot operation (P1)** |  |  |  |  |  |  |  |
-| 7.1 | Concert-night support and maintenance (operating expenditure, outside the 2,632 h) | bottom-up | - | - | 48 | 48 | 96 | 28,800 |
-| **8** | **Release 2.1 Product (C4, T3)** |  |  |  |  |  |  |  |
-| 8.1 | Multi-tenant data model and tenant isolation | three-point | - | 40 | 40 | 16 | 96 | 30,800 |
-| 8.2 | Plans, limits and tier enforcement | bottom-up | - | 20 | 40 | 20 | 80 | 25,000 |
-| 8.3 | Subscription billing and company set-up | bottom-up | 8 | 24 | 40 | 24 | 96 | 30,400 |
-| 8.4 | Self-service onboarding and service administration | bottom-up | - | 20 | 40 | 20 | 80 | 25,000 |
-| 8.5 | Security, load and integration test of Release 2.1 | bottom-up | 8 | 12 | 20 | 28 | 68 | 21,400 |
-| 8.6 | Migration of La Loy and release of the Free-plan sign-up | bottom-up | 4 | 12 | 20 | 20 | 56 | 17,600 |
-| **Total development effort** |  |  | **434** | **706** | **842** | **650** | **2632** | **846,600** |
-| Rate (THB/h) |  |  | 350 | 350 | 300 | 300 |  |  |
-| **Labor cost (THB)** |  |  | **151,900** | **247,100** | **252,600** | **195,000** |  | **846,600** |
-
-
-**Table 4.1 Effort per work package and engineer**
-
-**4.3 Three-point Estimates of the Risky Work Packages**
-
-The four work packages that carry the technical risks of Milestone 1 (RISK-03 gateway onboarding, RISK-05 burst load, the LINE push quota of RISK-07, the multi-tenant architecture of Release 2.1) were estimated three-point by the engineers who will build them, with the PERT weighted average (O + 4M + P) / 6 (Table 4.2). The allocated hours of Table 4.1 are within 2.5 % of the PERT values; the difference between the most likely and the pessimistic values is the reason these packages are named in the contingency reserve (Section 6.2).
+**Table 4.2 Three-point estimates and PERT weighted average**
 
 
 | WBS ID | Work package | Optimistic O (h) | Most likely M (h) | Pessimistic P (h) | PERT (O + 4M + P) / 6 | Allocated (h) | Allocated vs PERT |
@@ -683,12 +481,12 @@ The four work packages that carry the technical risks of Milestone 1 (RISK-03 ga
 | 6.1 | Scheduled reminders | 80 | 96 | 150 | 102.3 | 100 | -2.3 % |
 | 8.1 | Multi-tenant data model and tenant isolation | 72 | 92 | 150 | 98.3 | 96 | -2.4 % |
 
+<!-- /include -->
 
-**Table 4.2 Three-point estimates and PERT weighted average**
+<!-- include: part2-final-deliverables.md#Table 4.3 flat -->
+<!-- source: part2-final-deliverables.md -->
 
-**4.4 Comparison with the Top-down Estimate of Milestone 1**
-
-Table 4.3 compares the bottom-up hours per phase and engineer with the top-down estimate of Milestone 1 (Table 3.4 there). The totals per engineer and per year are identical by the Review Board's decision; per phase the bottom-up plan differs in two places: the monthly pilot KPI reports and the close-out (1.8, 1.9, 36 hours) are drawn from the Release 2.1 pool, which Milestone 1 had no row for, and 3.5 hours of the Project Manager's control work move from C3 to T2 because the control work package 1.6 spans both iterations. The percent difference is below 8 % for every phase that has hours in both estimates and 0 % in total, which confirms the Milestone 1 figures as the planning baseline.
+**Table 4.3 Bottom-up versus top-down effort by phase**
 
 
 | Phase | Boonnisa T. | Sirapatr C. | Chawanakorn S. | Watayut A. | Bottom-up (h) | Milestone 1 top-down (h) | Difference (h) | Percent difference |
@@ -703,9 +501,6 @@ Table 4.3 compares the bottom-up hours per phase and engineer with the top-down 
 | Transition Release 2.1 (T3) | 8 | 12 | 20 | 20 | 60 | 60 | +0 | 0.0 % |
 | Pilot operation and close-out (P1) | 20 | 4 | 0 | 12 | 36 | 0 | +36 | 200.0 % |
 | **Total** | **434** | **706** | **842** | **650** | **2632** | **2632** | **+0** | **0.0 %** |
-
-
-**Table 4.3 Bottom-up versus top-down effort by phase**
 
 <!-- /include -->
 
@@ -764,14 +559,10 @@ Re-grouped the features by release using the source report only and re-decompose
 </td></tr>
 <tr markdown="1"><td class="k">8. Final Output</td><td markdown="block">
 
-Part 2, Section 2.2 (Table 2.1), as delivered below, and the WBS of Section 3.1 (quoted in Record 3): Release 1.0 contains the core booking, payment and QR check-in features; Release 2.0 the reminders, grace extension, waitlist, transfer and reports; Release 2.1 the multi-tenant plans, billing and onboarding, with one numbering scheme shared by all tables. Review Board decision: Revise; accepted after the revision.
+Part 2, Table 2.1, as delivered below, and the WBS of Table 3.1 (quoted in Record 3): Release 1.0 contains the core booking, payment and QR check-in features; Release 2.0 the reminders, grace extension, waitlist, transfer and reports; Release 2.1 the multi-tenant plans, billing and onboarding, with one numbering scheme shared by all tables. Review Board decision: Revise; accepted after the revision.
 
-**2.2 Product Characteristics and Requirements**
-
-<!-- include: part2-final-deliverables.md#2.2 Product Characteristics and Requirements flat -->
+<!-- include: part2-final-deliverables.md#Table 2.1 flat -->
 <!-- source: part2-final-deliverables.md -->
-
-The product scope is the feature set of the Vision (Tables 2.15 to 2.18 of Milestone 1), grouped by release and user role in Table 2.1; the detailed requirements are the use-case specifications, the Software Requirements Specification and the Supplementary Specification of the Requirements Engineering project. The quality characteristics (Table 2.2) are the preliminary quality targets of Milestone 1 (Table 2.19), each now tied to the test that verifies it, as the Review Board asked (Table 1.1, row 7). Personal data is handled under the Personal Data Protection Act, with consent, retention and correction designed in; drink packages are presented within the Alcoholic Beverage Control Act.
 
 **Table 2.1 Product scope by release and role**
 
@@ -784,18 +575,6 @@ The product scope is the feature set of the Vision (Tables 2.15 to 2.18 of Miles
 | 2.0 Growth | Customer and System | F29 grace extension, F30 waitlist, F31 booking transfer, F32 scheduled reminders, F34 reminder scheduling, F35 waitlist offer | Use the central record to lose fewer tables: reminders, grace extension, waitlist in queue order, official transfer |
 | 2.0 Growth | Manager and Owner | F33 reports | Booking, revenue, artist-popularity and customer-history reports with export |
 | 2.1 Product | Software house | Multi-tenant data model and tenant isolation; Free, Standard and Premium plans with limits and enforcement; subscription billing and setup-fee invoicing; self-service onboarding; service administration; migration of La Loy | The pilot system productized as a subscription service within the 1,000 THB a month ceiling (Section 3.1 of Milestone 1) |
-
-**Table 2.2 Quality requirements and their verification**
-
-| Quality requirement | Target (Table 2.19 of Milestone 1) | Verification (test evidence) | When |
-|---|---|---|---|
-| Throughput at booking-open time | at least 5 transactions a second | Load test with simulated customers opening a round: 5 transactions a second sustained for 10 minutes, one hold per table, no deadlock (WBS 4.10) | before IOC; repeated for Release 2.1 (8.5) |
-| Response time | within 2 seconds for customer and Front Staff transactions | Response-time measurement during the load test and in the acceptance tests on the test devices inside LINE (4.10, 5.1) | IOC, T1 |
-| Check-in time | within 15 seconds per table | Timed check-in of 30 tickets by the Front Staff with the tablet at a pilot night (5.1, 5.4) | T1 |
-| Recovery after an outage | within 2 hours during opening hours | Restore drill: restore the daily backup to a fresh environment and bring the service up within 2 hours (4.10, repeated in 8.5) | IOC, C4 |
-| Backup and export | daily backup of booking data with export to Excel | Backup job verified daily in the test environment; the Excel export opened by the Manager (4.9, 5.1) | C2, T1 |
-| Supported browsers | current LINE in-app browser; last two versions of Chrome, Safari and Edge | Browser-compatibility checklist run on the test devices and the shop's desktop browser (4.10, 5.1) | IOC, T1 |
-| Operating cost of the restaurant | hosting, APIs and LINE plan at or below 1,000 THB a month | Monthly cost review of hosting and push messages during the pilot year (1.8) | P1 |
 
 <!-- /include -->
 
@@ -848,7 +627,24 @@ The member answered the agent's questions with the team's decisions: the project
 </td></tr>
 <tr markdown="1"><td class="k">8. Final Output</td><td markdown="block">
 
-Part 2, Table 2.2 (quoted with Section 2.2 in Record 6) and the evidence column of Table 2.4 (quoted in Record 2); the findings of the review are resolved in Part 2 as follows: one name (SEATS), feature identifiers F1 to F37, dates from the working-day calendar of Milestone 1 (Tables 3.2 and 7.1), one critical path justified by the float table (Section 7.2), noun work packages (Table 3.1), three-point values shown (Table 4.2), pilot KPI work and close-out as work packages of their own (1.8, 1.9). Acceptable because every quality target has a measurable threshold and an independent test, and because no finding of the review remains open. Review Board decision: Revise; accepted after the revision.
+Part 2, Table 2.2, as delivered below, and the evidence column of Table 2.4 (quoted in Record 2); the findings of the review are resolved in Part 2 as follows: one name (SEATS), feature identifiers F1 to F37, dates from the working-day calendar of Milestone 1 (Tables 3.2 and 7.1), one critical path justified by the float table (Section 7.2), noun work packages (Table 3.1), three-point values shown (Table 4.2), pilot KPI work and close-out as work packages of their own (1.8, 1.9). Acceptable because every quality target has a measurable threshold and an independent test, and because no finding of the review remains open. Review Board decision: Revise; accepted after the revision.
+
+<!-- include: part2-final-deliverables.md#Table 2.2 flat -->
+<!-- source: part2-final-deliverables.md -->
+
+**Table 2.2 Quality requirements and their verification**
+
+| Quality requirement | Target (Table 2.19 of Milestone 1) | Verification (test evidence) | When |
+|---|---|---|---|
+| Throughput at booking-open time | at least 5 transactions a second | Load test with simulated customers opening a round: 5 transactions a second sustained for 10 minutes, one hold per table, no deadlock (WBS 4.10) | before IOC; repeated for Release 2.1 (8.5) |
+| Response time | within 2 seconds for customer and Front Staff transactions | Response-time measurement during the load test and in the acceptance tests on the test devices inside LINE (4.10, 5.1) | IOC, T1 |
+| Check-in time | within 15 seconds per table | Timed check-in of 30 tickets by the Front Staff with the tablet at a pilot night (5.1, 5.4) | T1 |
+| Recovery after an outage | within 2 hours during opening hours | Restore drill: restore the daily backup to a fresh environment and bring the service up within 2 hours (4.10, repeated in 8.5) | IOC, C4 |
+| Backup and export | daily backup of booking data with export to Excel | Backup job verified daily in the test environment; the Excel export opened by the Manager (4.9, 5.1) | C2, T1 |
+| Supported browsers | current LINE in-app browser; last two versions of Chrome, Safari and Edge | Browser-compatibility checklist run on the test devices and the shop's desktop browser (4.10, 5.1) | IOC, T1 |
+| Operating cost of the restaurant | hosting, APIs and LINE plan at or below 1,000 THB a month | Monthly cost review of hosting and push messages during the pilot year (1.8) | P1 |
+
+<!-- /include -->
 
 </td></tr>
 </table>
@@ -899,16 +695,12 @@ The member confirmed the two decisions as the team's (no management reserve, so 
 </td></tr>
 <tr markdown="1"><td class="k">8. Final Output</td><td markdown="block">
 
-Part 2, Section 6, as delivered below (the effort, assignment and schedule tables of the same model are quoted in Records 3, 5 and 4). Acceptable because every figure of the cost baseline is traceable to hours, rates and listed items, the reserves are decided and justified, and the reconciliation with Milestone 1 is exact. Review Board decision: Accept.
+Part 2, Table 6.1, as delivered below (the time-phased baseline, Table 6.2, and the reserve rules are in Part 2; the effort and schedule tables of the same model are quoted in Records 3, 5 and 4). Acceptable because every figure of the cost baseline is traceable to hours, rates and listed items, the reserves are decided and justified, and the reconciliation with Milestone 1 is exact. Review Board decision: Accept.
 
-**6. Cost Estimate**
-
-<!-- include: part2-final-deliverables.md#6. Cost Estimate flat -->
+<!-- include: part2-final-deliverables.md#Table 6.1 flat -->
 <!-- source: part2-final-deliverables.md -->
 
-**6.1 Cost by WBS Item**
-
-The cost baseline is built up from the work packages, as the PMBOK budget build-up prescribes: the labor of each work package is its hours times the rate of each assigned engineer (Table 4.1), the other costs are the physical resources of Table 5.1 attached to the work packages that use them, and the contingency reserve for the identified risks is added to form the cost baseline (Table 6.1). The totals equal the budget of the charter and the cost tables of Milestone 1 (Tables 2.20 and 3.7 there): labor 846,600 THB, other costs 75,500 THB (test devices 15,000, hosting and domain 8,300, legal set-up 15,000, pilot hosting 8,400, pilot support 28,800), contingency 88,490 THB.
+**Table 6.1 Cost estimate by WBS item, contingency reserve, cost baseline and project budget**
 
 
 | WBS | Item | Hours | Labor basis (hours x THB/h) | Labor (THB) | Other costs (THB) | Subtotal (THB) |
@@ -929,48 +721,6 @@ The cost baseline is built up from the work packages, as the PMBOK budget build-
 |  | **Project budget (charter)** |  |  |  |  | **1,010,590** |
 |  | Less: pilot implementation fee of La Loy (revenue inside the project) |  |  |  |  | (150,000) |
 |  | **Net investment of the software house** |  |  |  |  | **860,590** |
-
-
-**Table 6.1 Cost estimate by WBS item, contingency reserve, cost baseline and project budget**
-
-**6.2 Contingency Reserve and Management Reserve**
-
-The contingency reserve covers identified risks (known unknowns) and is part of the cost baseline. Year 0 holds 69,790 THB, 10 % of the Year 0 cost, for the risks that can lengthen the build: RISK-02 (part-time engineers delayed by other work, about 2 weeks of an iteration, 35,000 THB), RISK-03 (gateway onboarding or LINE settings late, a re-run of the gateway package, 20,000 THB), RISK-05 (burst load above design, an extra load-test and tuning cycle, 10,000 THB), RISK-08 and RISK-10 (late business rules and change requests after the SRS baseline, rework in C3, 5,000 THB). Year 1 holds 18,700 THB, 10 % of the productization labor and the legal set-up, for RISK-04 (support and productization competing for the same engineers), RISK-07 (push messages or hosting above the operating-cost ceiling) and RISK-12 (slower adoption, which may require a second pilot venue before the gate). The reserve is released by the Project Manager at an iteration assessment against a recorded risk event, never for new features. The sponsor holds no management reserve for this project: unknown unknowns are escalated to the partners' meeting of the software house, which decides on additional funds or a scope change through the Change Control Board; the project budget therefore equals the cost baseline, 1,010,590 THB.
-
-**6.3 Time-phased Cost Baseline**
-
-Table 6.2 phases the cost baseline over the iterations: the labor of each work package is spread evenly over its working days, the other costs fall in the iteration that uses them, and the contingency reserve of each year is distributed in proportion to the cost of the iterations of that year. The cumulative column is the S-curve against which cost performance is measured at every iteration assessment; the Year 0 cumulative at the end of T2 is the 767,690 THB of the Year 0 budget.
-
-
-| Iteration | Name | Period | Labor (THB) | Other costs (THB) | Contingency (THB) | Subtotal (THB) | Cumulative (THB) |
-|---|---|---|---|---|---|---|---|
-| I1 | Inception I1 | 3 Aug 2026 to 24 Aug 2026 | 23,070 | 300 | 2,337 | 25,707 | 25,707 |
-| I2 | Inception I2 | 25 Aug 2026 to 2 Sep 2026 | 18,930 | 0 | 1,893 | 20,823 | 46,530 |
-| E1 | Elaboration E1 | 3 Sep 2026 to 16 Sep 2026 | 22,776 | 600 | 2,338 | 25,714 | 72,244 |
-| E2 | Elaboration E2 | 17 Sep 2026 to 23 Oct 2026 | 81,224 | 0 | 8,122 | 89,346 | 161,590 |
-| C1 | Construction C1 | 26 Oct 2026 to 18 Dec 2026 | 122,800 | 16,200 | 13,900 | 152,900 | 314,490 |
-| C2 | Construction C2 | 4 Jan 2027 to 26 Feb 2027 | 134,800 | 0 | 13,480 | 148,280 | 462,770 |
-| T1 | Transition T1 | 1 Mar 2027 to 2 Apr 2027 | 61,000 | 2,200 | 6,320 | 69,520 | 532,290 |
-| C3 | Construction C3 | 5 Apr 2027 to 25 Jun 2027 | 160,765 | 0 | 16,076 | 176,841 | 709,131 |
-| T2 | Transition T2 | 28 Jun 2027 to 30 Jul 2027 | 49,235 | 4,000 | 5,324 | 58,559 | 767,690 |
-| P1 | Pilot year P1 | 2 Aug 2027 to 28 Jul 2028 | 6,600 | 37,200 | 3,653 | 47,453 | 815,143 |
-| C4 | Construction C4 | 2 Aug 2027 to 14 Jan 2028 | 141,000 | 15,000 | 13,012 | 169,012 | 984,155 |
-| T3 | Transition T3 | 17 Jan 2028 to 11 Feb 2028 | 19,000 | 0 | 1,585 | 20,585 | 1,004,740 |
-| CL | Close-out | 24 Jul 2028 to 28 Jul 2028 | 5,400 | 0 | 450 | 5,850 | 1,010,590 |
-|  | **Total** |  | **846,600** | **75,500** | **88,490** | **1,010,590** |  |
-
-
-**Table 6.2 Time-phased cost baseline by iteration**
-
-**6.4 Reconciliation and Cost-control Rules**
-
-The bottom-up cost baseline reconciles with Milestone 1 without variance: 846,600 THB of labor for 2,632 hours, 75,500 THB of other costs, 88,490 THB of contingency, 1,010,590 THB in total, of which 767,690 THB in Year 0 and 242,900 THB in Year 1; less the pilot implementation fee of 150,000 THB, the net investment of the software house is 860,590 THB, as in the charter. The cost-control rules of the project are:
-
-- The Project Manager tracks actual hours against the 2,632-hour plan and actual cost against the time-phased baseline at every iteration assessment; the control threshold is ±10 % of the cumulative baseline, above which a change request or a re-plan is raised.
-- Any change that affects scope, budget or milestone dates is assessed for impact and decided by the Change Control Board; the baseline is re-planned, not silently extended (RISK-10).
-- The contingency reserve is held for identified risks and released against a recorded risk event; it is not planned feature-development effort.
-- The budget excludes the costs that Milestone 1 assigns to the restaurant: its LINE plan, the gateway's merchant fees and the check-in tablet.
-- Figures are kept in 2026 THB, rounded to the nearest 10 THB in the tables and to the hour in the effort plan.
 
 <!-- /include -->
 
