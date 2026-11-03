@@ -217,7 +217,7 @@ Each Construction work package can be decomposed into the same activities: *desi
 
 <div class="figs">
 <div class="row two">
-<figure><img src="../../../../../materials/lecture_notes/ch07_proj_cost_mgt-2311-17904150853502_png/page-11.png" alt="ch7 S11 · Types of cost estimates and accuracy (Table 7-1)"><figcaption>Figure 13. ch7 S11 · Types of cost estimates and accuracy (Table 7-1)</figcaption></figure>
+<figure><img src="../../../../../materials/lecture_notes/chapter_07/ch07_proj_cost_mgt-2311-17904150853502_png/page-11.png" alt="ch7 S11 · Types of cost estimates and accuracy (Table 7-1)"><figcaption>Figure 13. ch7 S11 · Types of cost estimates and accuracy (Table 7-1)</figcaption></figure>
 <figure><img src="figures/pmbok7_fig2-14_2-15_estimates.png" alt="PMBOK7 Figures 2-14 and 2-15 · Estimate range over time; accuracy vs precision (p.55–56)"><figcaption>Figure 14. PMBOK7 Figures 2-14 and 2-15 · Estimate range over time; accuracy vs precision (p.55–56)</figcaption></figure>
 </div>
 <div class="row two">
@@ -242,8 +242,8 @@ Each Construction work package can be decomposed into the same activities: *desi
 
 <div class="figs">
 <div class="row two">
-<figure><img src="../../../../../materials/lecture_notes/ch07_proj_cost_mgt-2311-17904150853502_png/page-15.png" alt="ch7 S15 · Use two approaches; percent difference"><figcaption>Figure 17. ch7 S15 · Use two approaches; percent difference</figcaption></figure>
-<figure><img src="../../../../../materials/lecture_notes/ch07_proj_cost_mgt-2311-17904150853502_png/page-17.png" alt="ch7 S17 · Labor vs function-point estimate of the same work (Figure 7-3)"><figcaption>Figure 18. ch7 S17 · Labor vs function-point estimate of the same work (Figure 7-3)</figcaption></figure>
+<figure><img src="../../../../../materials/lecture_notes/chapter_07/ch07_proj_cost_mgt-2311-17904150853502_png/page-15.png" alt="ch7 S15 · Use two approaches; percent difference"><figcaption>Figure 17. ch7 S15 · Use two approaches; percent difference</figcaption></figure>
+<figure><img src="../../../../../materials/lecture_notes/chapter_07/ch07_proj_cost_mgt-2311-17904150853502_png/page-17.png" alt="ch7 S17 · Labor vs function-point estimate of the same work (Figure 7-3)"><figcaption>Figure 18. ch7 S17 · Labor vs function-point estimate of the same work (Figure 7-3)</figcaption></figure>
 </div>
 </div><!-- /figs -->
 
@@ -261,12 +261,12 @@ Each Construction work package can be decomposed into the same activities: *desi
 
 <div class="figs">
 <div class="row two">
-<figure><img src="../../../../../materials/lecture_notes/ch07_proj_cost_mgt-2311-17904150853502_png/page-23.png" alt="ch7 S23 · Labor estimate by user story points"><figcaption>Figure 19. ch7 S23 · Labor estimate by user story points</figcaption></figure>
-<figure><img src="../../../../../materials/lecture_notes/ch07_proj_cost_mgt-2311-17904150853502_png/page-37.png" alt="ch7 S37 · Function point complexity matrices"><figcaption>Figure 20. ch7 S37 · Function point complexity matrices</figcaption></figure>
+<figure><img src="../../../../../materials/lecture_notes/chapter_07/ch07_proj_cost_mgt-2311-17904150853502_png/page-23.png" alt="ch7 S23 · Labor estimate by user story points"><figcaption>Figure 19. ch7 S23 · Labor estimate by user story points</figcaption></figure>
+<figure><img src="../../../../../materials/lecture_notes/chapter_07/ch07_proj_cost_mgt-2311-17904150853502_png/page-37.png" alt="ch7 S37 · Function point complexity matrices"><figcaption>Figure 20. ch7 S37 · Function point complexity matrices</figcaption></figure>
 </div>
 <div class="row two">
-<figure><img src="../../../../../materials/lecture_notes/ch07_proj_cost_mgt-2311-17904150853502_png/page-43.png" alt="ch7 S43 · Function point worksheet"><figcaption>Figure 21. ch7 S43 · Function point worksheet</figcaption></figure>
-<figure><img src="../../../../../materials/lecture_notes/ch07_proj_cost_mgt-2311-17904150853502_png/page-52.png" alt="ch7 S52 · COCOMO II effort formula"><figcaption>Figure 22. ch7 S52 · COCOMO II effort formula</figcaption></figure>
+<figure><img src="../../../../../materials/lecture_notes/chapter_07/ch07_proj_cost_mgt-2311-17904150853502_png/page-43.png" alt="ch7 S43 · Function point worksheet"><figcaption>Figure 21. ch7 S43 · Function point worksheet</figcaption></figure>
+<figure><img src="../../../../../materials/lecture_notes/chapter_07/ch07_proj_cost_mgt-2311-17904150853502_png/page-52.png" alt="ch7 S52 · COCOMO II effort formula"><figcaption>Figure 22. ch7 S52 · COCOMO II effort formula</figcaption></figure>
 </div>
 </div><!-- /figs -->
 
@@ -290,16 +290,16 @@ Pet Care **never estimated effort**: every development task got the same 16 days
 
 <div class="figs">
 <div class="row two">
-<figure><img src="../../../../../materials/lecture_notes/ch09_proj_resource_mgt-2311-17905771319665_png/page-28.png" alt="ch9 S28 · Responsibility assignment matrix (Figure 9-5)"><figcaption>Figure 23. ch9 S28 · Responsibility assignment matrix (Figure 9-5)</figcaption></figure>
-<figure><img src="../../../../../materials/lecture_notes/ch09_proj_resource_mgt-2311-17905771319665_png/page-29.png" alt="ch9 S29 · RACI chart (Table 9-2)"><figcaption>Figure 24. ch9 S29 · RACI chart (Table 9-2)</figcaption></figure>
+<figure><img src="../../../../../materials/lecture_notes/chapter_09/ch09_proj_resource_mgt-2311-17905771319665_png/page-28.png" alt="ch9 S28 · Responsibility assignment matrix (Figure 9-5)"><figcaption>Figure 23. ch9 S28 · Responsibility assignment matrix (Figure 9-5)</figcaption></figure>
+<figure><img src="../../../../../materials/lecture_notes/chapter_09/ch09_proj_resource_mgt-2311-17905771319665_png/page-29.png" alt="ch9 S29 · RACI chart (Table 9-2)"><figcaption>Figure 24. ch9 S29 · RACI chart (Table 9-2)</figcaption></figure>
 </div>
 <div class="row two">
-<figure><img src="../../../../../materials/lecture_notes/ch09_proj_resource_mgt-2311-17905771319665_png/page-30.png" alt="ch9 S30 · Staffing management plan and resource histogram (Figure 9-6)"><figcaption>Figure 25. ch9 S30 · Staffing management plan and resource histogram (Figure 9-6)</figcaption></figure>
-<figure><img src="../../../../../materials/lecture_notes/ch09_proj_resource_mgt-2311-17905771319665_png/page-33.png" alt="ch9 S33 · Resource breakdown structure (human and physical)"><figcaption>Figure 26. ch9 S33 · Resource breakdown structure (human and physical)</figcaption></figure>
+<figure><img src="../../../../../materials/lecture_notes/chapter_09/ch09_proj_resource_mgt-2311-17905771319665_png/page-30.png" alt="ch9 S30 · Staffing management plan and resource histogram (Figure 9-6)"><figcaption>Figure 25. ch9 S30 · Staffing management plan and resource histogram (Figure 9-6)</figcaption></figure>
+<figure><img src="../../../../../materials/lecture_notes/chapter_09/ch09_proj_resource_mgt-2311-17905771319665_png/page-33.png" alt="ch9 S33 · Resource breakdown structure (human and physical)"><figcaption>Figure 26. ch9 S33 · Resource breakdown structure (human and physical)</figcaption></figure>
 </div>
 <div class="row two">
-<figure><img src="../../../../../materials/lecture_notes/ch09_proj_resource_mgt-2311-17905771319665_png/page-37.png" alt="ch9 S37 · Resource loading and overallocation (Figure 9-7)"><figcaption>Figure 27. ch9 S37 · Resource loading and overallocation (Figure 9-7)</figcaption></figure>
-<figure><img src="../../../../../materials/lecture_notes/ch09_proj_resource_mgt-2311-17905771319665_png/page-39.png" alt="ch9 S39 · Resource leveling (Figure 9-8)"><figcaption>Figure 28. ch9 S39 · Resource leveling (Figure 9-8)</figcaption></figure>
+<figure><img src="../../../../../materials/lecture_notes/chapter_09/ch09_proj_resource_mgt-2311-17905771319665_png/page-37.png" alt="ch9 S37 · Resource loading and overallocation (Figure 9-7)"><figcaption>Figure 27. ch9 S37 · Resource loading and overallocation (Figure 9-7)</figcaption></figure>
+<figure><img src="../../../../../materials/lecture_notes/chapter_09/ch09_proj_resource_mgt-2311-17905771319665_png/page-39.png" alt="ch9 S39 · Resource leveling (Figure 9-8)"><figcaption>Figure 28. ch9 S39 · Resource leveling (Figure 9-8)</figcaption></figure>
 </div>
 <div class="row">
 <figure><img src="../../../../../materials/lecture_notes/chapter_06/ch06_proj_schedule_mgt-2311-17897900242136_png/page-17.png" alt="ch6 S17 · Sprint backlog: tasks assigned to members with effort in person-hours"><figcaption>Figure 29. ch6 S17 · Sprint backlog: tasks assigned to members with effort in person-hours</figcaption></figure>
@@ -350,8 +350,8 @@ Pet Care's assignment table (Table 30) only listed role names per task: no hours
 
 <div class="figs">
 <div class="row two">
-<figure><img src="../../../../../materials/lecture_notes/ch07_proj_cost_mgt-2311-17904150853502_png/page-06.png" alt="ch7 S6 · Contingency reserve vs management reserve"><figcaption>Figure 32. ch7 S6 · Contingency reserve vs management reserve</figcaption></figure>
-<figure><img src="../../../../../materials/lecture_notes/ch07_proj_cost_mgt-2311-17904150853502_png/page-71.png" alt="ch7 S71 · Budget components (Figure 7-5)"><figcaption>Figure 33. ch7 S71 · Budget components (Figure 7-5)</figcaption></figure>
+<figure><img src="../../../../../materials/lecture_notes/chapter_07/ch07_proj_cost_mgt-2311-17904150853502_png/page-06.png" alt="ch7 S6 · Contingency reserve vs management reserve"><figcaption>Figure 32. ch7 S6 · Contingency reserve vs management reserve</figcaption></figure>
+<figure><img src="../../../../../materials/lecture_notes/chapter_07/ch07_proj_cost_mgt-2311-17904150853502_png/page-71.png" alt="ch7 S71 · Budget components (Figure 7-5)"><figcaption>Figure 33. ch7 S71 · Budget components (Figure 7-5)</figcaption></figure>
 </div>
 <div class="row">
 <figure><img src="figures/pmbok7_fig2-18_budget_build_up.png" alt="PMBOK7 Figure 2-18 · Budget build-up (p.63)"><figcaption>Figure 34. PMBOK7 Figure 2-18 · Budget build-up (p.63)</figcaption></figure>
@@ -364,10 +364,10 @@ Columns `WBS Items | # Units/Hrs. | Cost/Unit/Hr. | Subtotals | WBS Level 2 Tota
 
 <div class="figs">
 <div class="row">
-<figure><img src="../../../../../materials/lecture_notes/ch07_proj_cost_mgt-2311-17904150853502_png/page-16.png" alt="ch7 S16 · Surveyor Pro cost estimate by WBS item (Figure 7-2)"><figcaption>Figure 35. ch7 S16 · Surveyor Pro cost estimate by WBS item (Figure 7-2)</figcaption></figure>
+<figure><img src="../../../../../materials/lecture_notes/chapter_07/ch07_proj_cost_mgt-2311-17904150853502_png/page-16.png" alt="ch7 S16 · Surveyor Pro cost estimate by WBS item (Figure 7-2)"><figcaption>Figure 35. ch7 S16 · Surveyor Pro cost estimate by WBS item (Figure 7-2)</figcaption></figure>
 </div>
 <div class="row">
-<figure><img src="../../../../../materials/lecture_notes/ch07_proj_cost_mgt-2311-17904150853502_png/page-70.png" alt="ch7 S70 · Time-phased cost baseline (Figure 7-4)"><figcaption>Figure 36. ch7 S70 · Time-phased cost baseline (Figure 7-4)</figcaption></figure>
+<figure><img src="../../../../../materials/lecture_notes/chapter_07/ch07_proj_cost_mgt-2311-17904150853502_png/page-70.png" alt="ch7 S70 · Time-phased cost baseline (Figure 7-4)"><figcaption>Figure 36. ch7 S70 · Time-phased cost baseline (Figure 7-4)</figcaption></figure>
 </div>
 </div><!-- /figs -->
 
