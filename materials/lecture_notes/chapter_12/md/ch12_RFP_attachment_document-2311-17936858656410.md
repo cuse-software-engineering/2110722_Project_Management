@@ -1,0 +1,9 @@
+# Houstonfirst's RFP for Project Management Services — Attachment Document
+
+*Case-study attachment document for Chapter 12 (Project Procurement Management): Tables 12-1 and 12-2 from the course textbook (Schwalbe, Information Technology Project Management, 9th ed.), scanned with the lecturer's highlights (pink underlining). Source: Houston First Corporation (2017). Page images only, not transcribed; the three scanned pages are in `../ch12_RFP_attachment_document-2311-17936858656410_png/` (page-01.png … page-03.png).*
+
+| Page | Image | Content |
+|---|---|---|
+| 1 | [page-01.png](../ch12_RFP_attachment_document-2311-17936858656410_png/page-01.png) | TABLE 12-1 Example RFP for project management services: I. Purpose of RFP (Houston First Corporation, Wortham Theater Center and Theater District Underground Parking Garages recovery, est. 40–45 million dollars, professional services not construction); II. Scope of Services, tasks a–p (cost estimating, meetings, contract documents, … close-out document review) |
+| 2 | [page-02.png](../ch12_RFP_attachment_document-2311-17936858656410_png/page-02.png) | TABLE 12-1 (continued): III. Term/Schedule Information (eight calendar months); IV. Proposal Format a–e (Transmittal Letter, Project Team, Experience, Pricing as a single lump-sum fee, Diversity Commitment 30 percent); V. Evaluation weights (Transmittal Letter 15%, Project Team 25%, Experience 25%, Pricing 25%, Diversity 10%) |
+| 3 | [page-03.png](../ch12_RFP_attachment_document-2311-17936858656410_png/page-03.png) | TABLE 12-2 Letters of clarification information from RFP: Proposal Format "d" Pricing replaced by an hourly rate service schedule and a not-to-exceed amount; Pre-Proposal Conference (site tour 9:00 a.m. and conference ~11:00 a.m., October 16, 2017); Project Questions and Answers 1–5 (two full-time positions, no office space, 5–8 meetings per week, PM not on-site at all times, no required PM software) |
